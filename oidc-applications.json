@@ -343,7 +343,7 @@
       "license": "AGPL-3.0",
       "oidc_support": "Built-in generic OIDC strategy",
       "description": "A self-hosted wiki and knowledge base with a built-in generic OpenID Connect authentication strategy.",
-      "documentation_url": "https://github.com/requarks/wiki/tree/main/server/modules/authentication/oidc"
+      "documentation_url": "https://docs.js.wiki/en/admin/authentication/oidc"
     },
     {
       "name": "HedgeDoc",

@@ -8,7 +8,7 @@ A dependency-free Node.js build that turns `oidc-applications.json` into static 
 npm run build
 ```
 
-The generated site is written to `dist/index.html` (`index.css`, `filter.js`, and `taxfree.svg` are copied to `dist` when present). Edit the shell in `index.html` to add your own styling, navigation, or other markup. Keep the `<!-- OIDC_APPLICATIONS -->` marker where the generated tables should appear.
+The generated site is written to `dist/index.html` (`index.css`, `filter.js`, and `taxfree.svg` are copied to `dist` when present). The build also generates `dist/sitemap.xml` and `dist/robots.txt` for search-engine discovery. It defaults to `https://ssno.tax`; set `SITE_URL` when deploying to a different domain, for example `SITE_URL=https://example.com npm run build`. Edit the shell in `index.html` to add your own styling, navigation, or other markup. Keep the `<!-- OIDC_APPLICATIONS -->` marker where the generated tables should appear.
 
 For live validation while editing:
 

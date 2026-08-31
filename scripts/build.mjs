@@ -7,7 +7,22 @@ const sourcePath = resolve(projectRoot, "oidc-applications.json");
 const shellPath = resolve(projectRoot, "index.html");
 const outputDirectory = resolve(projectRoot, "dist");
 const outputPath = resolve(outputDirectory, "index.html");
+const sitemapPath = resolve(outputDirectory, "sitemap.xml");
+const robotsPath = resolve(outputDirectory, "robots.txt");
 const stylesheetPath = resolve(projectRoot, "index.css");
+const siteUrl = process.env.SITE_URL ?? "https://ssno.tax";
+
+let siteOrigin;
+try {
+  siteOrigin = new URL(siteUrl);
+  if (!["http:", "https:"].includes(siteOrigin.protocol) || siteOrigin.search || siteOrigin.hash) {
+    throw new Error();
+  }
+} catch {
+  throw new Error("SITE_URL must be a valid http(s) URL without a query string or hash");
+}
+
+const siteBaseUrl = siteOrigin.href.replace(/\/$/, "");
 const filterScriptPath = resolve(projectRoot, "filter.js");
 const logoPath = resolve(projectRoot, "taxfree.svg");
 const marker = "<!-- OIDC_APPLICATIONS -->";
@@ -22,6 +37,19 @@ const escapeHtml = (value) =>
         ">": "&gt;",
         '"': "&quot;",
         "'": "&#39;",
+      })[character],
+  );
+
+const escapeXml = (value) =>
+  String(value ?? "").replace(
+    /[&<>"']/g,
+    (character) =>
+      ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&apos;",
       })[character],
   );
 
@@ -173,6 +201,19 @@ await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
 await writeFile(outputPath, output);
 
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>${escapeXml(`${siteBaseUrl}/`)}</loc>
+  </url>
+</urlset>
+`;
+await writeFile(sitemapPath, sitemap);
+await writeFile(
+  robotsPath,
+  `User-agent: *\nAllow: /\nSitemap: ${siteBaseUrl}/sitemap.xml\n`,
+);
+
 for (const [sourceFile, outputFile] of [
   [stylesheetPath, "index.css"],
   [filterScriptPath, "filter.js"],
@@ -186,3 +227,4 @@ for (const [sourceFile, outputFile] of [
 }
 
 console.log(`Built ${outputPath} from ${data.applications.length} applications.`);
+console.log(`Generated ${sitemapPath} for ${siteBaseUrl}.`);
