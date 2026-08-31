@@ -505,11 +505,12 @@ body {
   .application-table td {
     width: auto !important;
     min-width: 0;
-    padding: 0.45rem 0;
+    padding: 0.45rem 0 !important;
     border-bottom: 1px solid #e5e7eb;
-    /* Desktop rules center the status columns via nth-child selectors, which
-       out-specify this rule, so the alignment must be forced back here or the
-       card labels and values end up ragged/centered on mobile. */
+    /* Desktop rules style columns via nth-child selectors, which out-specify
+       this rule (e.g. centered text on the status columns, extra side padding
+       on column 3), so width/padding/text-align must be forced back here or
+       individual card rows end up misaligned on mobile. */
     text-align: left !important;
   }
 
