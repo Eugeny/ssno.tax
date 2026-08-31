@@ -23,6 +23,10 @@ try {
 }
 
 const siteBaseUrl = siteOrigin.href.replace(/\/$/, "");
+const lowActivityDays = Number(process.env.LOW_ACTIVITY_DAYS ?? 180);
+if (!Number.isInteger(lowActivityDays) || lowActivityDays < 1) {
+  throw new Error("LOW_ACTIVITY_DAYS must be a positive integer");
+}
 const filterScriptPath = resolve(projectRoot, "filter.js");
 const logoPath = resolve(projectRoot, "taxfree.svg");
 const marker = "<!-- OIDC_APPLICATIONS -->";
@@ -86,6 +90,11 @@ const renderStatusLegend = () => `
     <div class="oidc-legend" aria-label="OIDC support legend">
       <span><span class="oidc-status oidc-status--built-in" aria-hidden="true"></span> Built-in</span>
       <span><span class="oidc-status oidc-status--extension" aria-hidden="true"></span> Extension required</span>
+    </div>
+    <div class="repo-health-legend" aria-label="Repository health legend">
+      <span><span class="repo-health repo-health--green" aria-hidden="true"></span> Active</span>
+      <span><span class="repo-health repo-health--red" aria-hidden="true"></span> Low activity</span>
+      <span><span class="repo-health repo-health--gray" aria-hidden="true"></span> No GitHub URL</span>
     </div>`;
 
 const renderNotes = (notes = []) => {
@@ -98,6 +107,14 @@ const renderNotes = (notes = []) => {
         ${notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("\n        ")}
       </ul>
     </aside>`;
+};
+
+const renderRepoHealth = (health = {}) => {
+  const color = health.status === "active" ? "green" : health.status === "untracked" ? "gray" : "red";
+  const label = health.status === "active" ? "Active repository" : health.status === "low" ? "Low activity" : health.status === "untracked" ? "No GitHub repository" : "Unable to check repository";
+  const date = health.lastCommit ? ` Last commit: ${health.lastCommit.slice(0, 10)}.` : "";
+
+  return `<span class="repo-health repo-health--${color}" role="img" aria-label="${label}" title="${escapeHtml(`${label}.${date}`)}"></span><span class="visually-hidden">${escapeHtml(label)}</span>`;
 };
 
 const renderFilters = (categoryEntries) => `
@@ -128,6 +145,7 @@ const renderApplication = (application) => {
               </a>
             </th>
             <td>${renderOidcStatus(application.oidc_status)}</td>
+            <td>${renderRepoHealth(application.repo_health)}</td>
             <td>${renderLicense(application.license)}</td>
             <td>${escapeHtml(application.description)}</td>
             <td>${externalLink(application.documentation_url, "Documentation")}</td>
@@ -144,6 +162,7 @@ const renderCategory = ([category, applications]) => `
             <tr>
               <th scope="col">Application</th>
               <th scope="col">OIDC support</th>
+              <th scope="col">Repo health</th>
               <th scope="col">License</th>
               <th scope="col">Description</th>
               <th scope="col">Links</th>
@@ -161,6 +180,79 @@ const shell = await readFile(shellPath, "utf8");
 
 if (!Array.isArray(data.applications)) {
   throw new Error("oidc-applications.json must contain an applications array");
+}
+
+const githubRepositoryFromUrl = (value) => {
+  try {
+    const url = new URL(value);
+    if (url.hostname !== "github.com" && url.hostname !== "www.github.com") return null;
+
+    const [owner, repository] = url.pathname.split("/").filter(Boolean);
+    if (!owner || !repository) return null;
+    return `${owner}/${repository.replace(/\\.git$/, "")}`;
+  } catch {
+    return null;
+  }
+};
+
+const fetchRepoHealth = async (application) => {
+  const repository = githubRepositoryFromUrl(application.github_url ?? application.project_url);
+  if (!repository) {
+    return { status: "untracked" };
+  }
+
+  try {
+    let lastCommit;
+    if (process.env.GITHUB_TOKEN) {
+      const response = await fetch(
+        `https://api.github.com/repos/${repository}/commits?per_page=1`,
+        {
+          headers: {
+            Accept: "application/vnd.github+json",
+            Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+            "User-Agent": "oidc-applications-catalog-build",
+          },
+        },
+      );
+      if (!response.ok) throw new Error(`GitHub API returned ${response.status}`);
+
+      const commits = await response.json();
+      lastCommit = commits[0]?.commit?.committer?.date ?? commits[0]?.commit?.author?.date;
+    } else {
+      // The Atom feed avoids consuming the unauthenticated GitHub API rate limit
+      // during public Cloudflare Pages builds.
+      const response = await fetch(`https://github.com/${repository}/commits.atom`);
+      if (!response.ok) throw new Error(`GitHub feed returned ${response.status}`);
+
+      const feed = await response.text();
+      lastCommit = feed.match(/<entry>[\s\S]*?<updated>([^<]+)<\/updated>/)?.[1];
+    }
+    if (!lastCommit || Number.isNaN(Date.parse(lastCommit))) throw new Error("No valid commit date returned");
+
+    const ageInDays = (Date.now() - Date.parse(lastCommit)) / 86_400_000;
+    return {
+      status: ageInDays >= lowActivityDays ? "low" : "active",
+      lastCommit,
+      repository,
+    };
+  } catch (error) {
+    return {
+      status: "unavailable",
+      reason: error.message,
+      repository,
+    };
+  }
+};
+
+const repoHealthResults = await Promise.all(
+  data.applications.map(async (application) => {
+    application.repo_health = await fetchRepoHealth(application);
+    return application.repo_health;
+  }),
+);
+const unavailableRepoCount = repoHealthResults.filter(({ status }) => status === "unavailable").length;
+if (unavailableRepoCount) {
+  console.warn(`Could not fetch repository activity for ${unavailableRepoCount} application(s).`);
 }
 
 const categories = new Map();

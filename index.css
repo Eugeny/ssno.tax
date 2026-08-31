@@ -131,10 +131,20 @@ body {
   font-size: 0.85rem;
 }
 
-.oidc-legend > span {
+.oidc-legend > span,
+.repo-health-legend > span {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+}
+
+.repo-health-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+  font-size: 0.85rem;
 }
 
 .oidc-status {
@@ -264,27 +274,33 @@ body {
 
 .application-table th:nth-child(1),
 .application-table td:nth-child(1) {
-  width: 18%;
+  width: 17%;
 }
 
 .application-table th:nth-child(2),
 .application-table td:nth-child(2) {
-  width: 10%;
+  width: 9%;
   text-align: center;
 }
 
 .application-table th:nth-child(3),
 .application-table td:nth-child(3) {
-  width: 19%;
+  width: 8%;
+  text-align: center;
 }
 
 .application-table th:nth-child(4),
 .application-table td:nth-child(4) {
-  width: 41%;
+  width: 15%;
 }
 
 .application-table th:nth-child(5),
 .application-table td:nth-child(5) {
+  width: 39%;
+}
+
+.application-table th:nth-child(6),
+.application-table td:nth-child(6) {
   width: 12%;
 }
 
@@ -337,7 +353,7 @@ body {
 }
 
 .application-table td:nth-child(2),
-.application-table td:nth-child(3) {
+.application-table td:nth-child(4) {
   color: #475569;
   font-size: 0.9rem;
 }
@@ -356,8 +372,29 @@ body {
   line-height: 1;
 }
 
-.application-table td:nth-child(5) {
+.application-table td:nth-child(6) {
   white-space: nowrap;
+}
+
+.repo-health {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #0f172a33, 0 1px 3px #0f172a55;
+  vertical-align: middle;
+}
+
+.repo-health--green {
+  background: #16a34a;
+}
+
+.repo-health--red {
+  background: #dc2626;
+}
+
+.repo-health--gray {
+  background: #94a3b8;
 }
 
 .application-table a:not(.application-name) {
