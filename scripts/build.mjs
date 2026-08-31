@@ -23,7 +23,7 @@ try {
 }
 
 const siteBaseUrl = siteOrigin.href.replace(/\/$/, "");
-const lowActivityDays = Number(process.env.LOW_ACTIVITY_DAYS ?? 180);
+const lowActivityDays = Number(process.env.LOW_ACTIVITY_DAYS ?? 90);
 if (!Number.isInteger(lowActivityDays) || lowActivityDays < 1) {
   throw new Error("LOW_ACTIVITY_DAYS must be a positive integer");
 }
