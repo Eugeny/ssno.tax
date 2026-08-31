@@ -415,6 +415,74 @@
       "oidc_support": "Built-in OAuth2/OIDC login",
       "description": "An open-source, self-hosted kanban board for organizing projects and tasks, with OAuth2/OIDC login and automatic registration support.",
       "documentation_url": "https://github.com/wekan/wekan/blob/master/docs/Features/Login/OAuth2.md"
+    },
+    {
+      "name": "LibreChat",
+      "category": "AI assistants",
+      "project_url": "https://www.librechat.ai/",
+      "github_url": "https://github.com/danny-avila/LibreChat",
+      "logo_url": "https://cdn.simpleicons.org/librechat",
+      "license": "MIT",
+      "oidc_support": "Built-in OAuth2/OIDC authentication",
+      "description": "A popular self-hosted AI chat platform with configurable OAuth2 and OpenID Connect authentication for external identity providers.",
+      "documentation_url": "https://www.librechat.ai/docs/configuration/authentication/OAuth2-OIDC"
+    },
+    {
+      "name": "Mealie",
+      "category": "Recipe management",
+      "project_url": "https://mealie.io/",
+      "github_url": "https://github.com/mealie-recipes/mealie",
+      "logo_url": "https://cdn.simpleicons.org/mealie",
+      "license": "AGPL-3.0",
+      "oidc_support": "Built-in",
+      "description": "A popular self-hosted recipe manager and meal planner with native OpenID Connect authentication, account linking, and optional group-based access.",
+      "documentation_url": "https://docs.mealie.io/documentation/getting-started/authentication/oidc-v2/"
+    },
+    {
+      "name": "Linkding",
+      "category": "Bookmarks & read-it-later",
+      "project_url": "https://www.linkding.org/",
+      "github_url": "https://github.com/sissbruecker/linkding",
+      "logo_url": "https://cdn.simpleicons.org/linkding",
+      "license": "MIT",
+      "oidc_support": "Built-in OIDC",
+      "description": "A fast, minimal self-hosted bookmark manager with native OIDC single sign-on and support for authentication proxies.",
+      "documentation_url": "https://github.com/sissbruecker/linkding#readme"
+    },
+    {
+      "name": "Rancher",
+      "category": "Kubernetes management",
+      "project_url": "https://www.rancher.com/",
+      "github_url": "https://github.com/rancher/rancher",
+      "logo_url": "https://cdn.simpleicons.org/rancher",
+      "license": "Apache-2.0",
+      "oidc_support": "Built-in generic OIDC",
+      "description": "An open-source Kubernetes management platform with free self-hosted authentication through generic OIDC providers, including user and group mapping.",
+      "documentation_url": "https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/authentication-permissions-and-global-configuration/authentication-config/configure-generic-oidc"
+    },
+    {
+      "name": "Matomo",
+      "category": "Analytics",
+      "project_url": "https://matomo.org/",
+      "github_url": "https://github.com/matomo-org/matomo",
+      "logo_url": "https://cdn.simpleicons.org/matomo",
+      "license": "GPL 3",
+      "oidc_status": "extension",
+      "oidc_support": "Free LoginOIDC plugin",
+      "description": "A widely used open-source web analytics platform with free OIDC login for self-hosted Matomo On-Premise through the LoginOIDC plugin.",
+      "documentation_url": "https://plugins.matomo.org/LoginOIDC"
+    },
+    {
+      "name": "Drupal",
+      "category": "CMS & publishing",
+      "project_url": "https://www.drupal.org/",
+      "github_url": "https://github.com/drupal/drupal",
+      "logo_url": "https://cdn.simpleicons.org/drupal",
+      "license": "GPL 2",
+      "oidc_status": "extension",
+      "oidc_support": "Free OpenID Connect module",
+      "description": "A widely used open-source CMS with OIDC login available through the community-maintained OpenID Connect module.",
+      "documentation_url": "https://www.drupal.org/project/openid_connect"
     }
   ]
 }
