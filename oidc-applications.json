@@ -483,6 +483,28 @@
       "oidc_support": "Free OpenID Connect module",
       "description": "A widely used open-source CMS with OIDC login available through the community-maintained OpenID Connect module.",
       "documentation_url": "https://www.drupal.org/project/openid_connect"
+    },
+    {
+      "name": "Beszel",
+      "category": "Observability & dashboards",
+      "project_url": "https://beszel.dev/",
+      "github_url": "https://github.com/henrygd/beszel",
+      "logo_url": "https://raw.githubusercontent.com/henrygd/beszel/main/internal/site/public/static/icon.svg",
+      "license": "MIT",
+      "oidc_support": "Built-in OAuth2/OIDC authentication",
+      "description": "A lightweight self-hosted server monitoring platform with historical data, Docker statistics, alerts, and custom OAuth2/OIDC providers.",
+      "documentation_url": "https://www.beszel.dev/guide/oauth"
+    },
+    {
+      "name": "Vaultwarden",
+      "category": "Password management",
+      "project_url": "https://github.com/dani-garcia/vaultwarden",
+      "github_url": "https://github.com/dani-garcia/vaultwarden",
+      "logo_url": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/resources/vaultwarden-logo.svg",
+      "license": "AGPL-3.0-only",
+      "oidc_support": "Built-in OpenID Connect SSO",
+      "description": "An unofficial Bitwarden-compatible server with self-hosted OpenID Connect SSO, account provisioning, and optional SSO-only login.",
+      "documentation_url": "https://github.com/dani-garcia/vaultwarden/wiki/Enabling-SSO"
     }
   ]
 }
