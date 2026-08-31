@@ -354,6 +354,28 @@
       "oidc_support": "Built-in",
       "description": "A self-hosted collaborative Markdown editor and knowledge-sharing platform that supports one or more generic OIDC providers.",
       "documentation_url": "https://github.com/hedgedoc/hedgedoc/blob/develop/docs/content/references/config/auth/oidc.md"
+    },
+    {
+      "name": "XWiki",
+      "category": "Documentation & wiki",
+      "project_url": "https://www.xwiki.org/",
+      "logo_url": "https://raw.githubusercontent.com/xwiki/xwiki-platform/master/xwiki-platform-core/xwiki-platform-flamingo/xwiki-platform-flamingo-skin/xwiki-platform-flamingo-skin-resources/src/main/resources/flamingo/logo.svg",
+      "license": "LGPL-2.1",
+      "oidc_status": "extension",
+      "oidc_support": "Free OpenID Connect extension",
+      "description": "An open-source wiki and knowledge-management platform with OIDC authentication available through a free extension.",
+      "documentation_url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID+Connect/"
+    },
+    {
+      "name": "Redmine",
+      "category": "Project & task management",
+      "project_url": "https://www.redmine.org/",
+      "logo_url": "https://raw.githubusercontent.com/redmine/redmine/master/app/assets/images/favicon.ico",
+      "license": "GPL 2",
+      "oidc_status": "extension",
+      "oidc_support": "Free OpenID Connect plugin",
+      "description": "An open-source project management and issue-tracking application with OIDC login available through a free community plugin.",
+      "documentation_url": "https://github.com/nanego/redmine_omniauth_oidc#readme"
     }
   ]
 }
