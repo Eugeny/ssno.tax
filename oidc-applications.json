@@ -351,6 +351,7 @@
       "name": "Leantime",
       "category": "Project & task management",
       "project_url": "https://leantime.io/",
+      "github_url": "https://github.com/Leantime/leantime",
       "logo_url": "https://cdn.jsdelivr.net/gh/Leantime/leantime@master/public/assets/images/logo_blue.svg",
       "license": "AGPL-3.0",
       "oidc_support": "Built-in in the free edition",
