@@ -343,7 +343,7 @@
       "license": "AGPL-3.0",
       "oidc_support": "Built-in generic OIDC strategy",
       "description": "A self-hosted wiki and knowledge base with a built-in generic OpenID Connect authentication strategy.",
-      "documentation_url": "https://docs.js.wiki/en/admin/authentication/oidc"
+      "documentation_url": "https://docs.requarks.io/auth"
     },
     {
       "name": "HedgeDoc",
@@ -364,7 +364,7 @@
       "oidc_status": "extension",
       "oidc_support": "Free OpenID Connect extension",
       "description": "An open-source wiki and knowledge-management platform with OIDC authentication available through a free extension.",
-      "documentation_url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID+Connect/"
+      "documentation_url": "https://github.com/xwiki-contrib/oidc#readme"
     },
     {
       "name": "Redmine",
