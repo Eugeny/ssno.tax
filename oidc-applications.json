@@ -154,6 +154,7 @@
       "name": "Windshift",
       "category": "Project & task management",
       "project_url": "https://windshift.sh",
+      "github_url": "https://github.com/Windshiftapp/core",
       "logo_url": "https://raw.githubusercontent.com/Windshiftapp/core/main/frontend/public/windshift-3.svg",
       "license": "AGPL-3.0",
       "oidc_support": "Built-in in the free edition",
@@ -505,6 +506,39 @@
       "oidc_support": "Built-in OpenID Connect SSO",
       "description": "An unofficial Bitwarden-compatible server with self-hosted OpenID Connect SSO, account provisioning, and optional SSO-only login.",
       "documentation_url": "https://github.com/dani-garcia/vaultwarden/wiki/Enabling-SSO"
+    },
+    {
+      "name": "Coder",
+      "category": "Developer platforms",
+      "project_url": "https://coder.com/",
+      "github_url": "https://github.com/coder/coder",
+      "logo_url": "https://cdn.simpleicons.org/coder",
+      "license": "AGPL-3.0",
+      "oidc_support": "Built-in OpenID Connect authentication",
+      "description": "An open-source self-hosted platform for provisioning cloud development environments with OIDC authentication, claims mapping, and optional refresh tokens.",
+      "documentation_url": "https://coder.com/docs/admin/users/oidc-auth"
+    },
+    {
+      "name": "NetBird",
+      "category": "Remote access & VPN",
+      "project_url": "https://netbird.io/",
+      "github_url": "https://github.com/netbirdio/netbird",
+      "logo_url": "https://raw.githubusercontent.com/netbirdio/netbird/main/proxy/web/src/assets/netbird-full.svg",
+      "license": "BSD-3-Clause / AGPL-3.0",
+      "oidc_support": "Built-in generic OIDC",
+      "description": "An open-source WireGuard-based mesh VPN with a self-hosted management service and generic OIDC login for the management dashboard and clients.",
+      "documentation_url": "https://docs.netbird.io/selfhosted/identity-providers/generic-oidc"
+    },
+    {
+      "name": "Memos",
+      "category": "Notes & knowledge management",
+      "project_url": "https://usememos.com/",
+      "github_url": "https://github.com/usememos/memos",
+      "logo_url": "https://usememos.com/logo-rounded.png",
+      "license": "MIT",
+      "oidc_support": "Built-in configurable OAuth2/OIDC SSO",
+      "description": "A popular self-hosted notes and knowledge-base application with configurable OAuth2/OIDC providers, linked identities, and SSO-only login options.",
+      "documentation_url": "https://usememos.com/docs/configuration/authentication"
     }
   ]
 }

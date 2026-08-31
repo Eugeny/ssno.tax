@@ -139,11 +139,11 @@ const renderApplication = (application) => {
                 <span>${escapeHtml(application.name)}</span>
               </a>
             </th>
-            <td>${renderOidcStatus(application.oidc_status)}</td>
-            <td>${renderRepoHealth(application.repo_health)}</td>
-            <td>${renderLicense(application.license)}</td>
-            <td>${escapeHtml(application.description)}</td>
-            <td>${externalLink(application.documentation_url, "Documentation")}</td>
+            <td data-label="OIDC support">${renderOidcStatus(application.oidc_status)}</td>
+            <td data-label="Repo health">${renderRepoHealth(application.repo_health)}</td>
+            <td data-label="License">${renderLicense(application.license)}</td>
+            <td data-label="Description">${escapeHtml(application.description)}</td>
+            <td data-label="Links">${externalLink(application.documentation_url, "Documentation")}</td>
           </tr>`;
 };
 
