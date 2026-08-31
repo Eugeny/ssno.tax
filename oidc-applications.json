@@ -9,7 +9,7 @@
   "applications": [
     {
       "name": "BookStack",
-      "category": "Documentation / wiki",
+      "category": "Documentation & wiki",
       "project_url": "https://www.bookstackapp.com/",
       "logo_url": "https://cdn.simpleicons.org/bookstack",
       "license": "MIT",
@@ -19,7 +19,7 @@
     },
     {
       "name": "Gitea",
-      "category": "Git hosting / DevOps",
+      "category": "Git hosting & DevOps",
       "project_url": "https://about.gitea.com/",
       "logo_url": "https://cdn.simpleicons.org/gitea",
       "license": "MIT",
@@ -29,7 +29,7 @@
     },
     {
       "name": "GitLab Self-Managed",
-      "category": "Git hosting / DevOps",
+      "category": "Git hosting & DevOps",
       "project_url": "https://about.gitlab.com/",
       "logo_url": "https://cdn.simpleicons.org/gitlab",
       "license": "MIT (Community Edition) / GitLab Enterprise Edition license",
@@ -39,7 +39,7 @@
     },
     {
       "name": "Forgejo",
-      "category": "Git hosting / DevOps",
+      "category": "Git hosting & DevOps",
       "project_url": "https://forgejo.org/",
       "logo_url": "https://cdn.simpleicons.org/forgejo",
       "license": "GPL-3.0-only",
@@ -49,7 +49,7 @@
     },
     {
       "name": "Grafana OSS",
-      "category": "Observability / dashboards",
+      "category": "Observability & dashboards",
       "project_url": "https://grafana.com/oss/grafana/",
       "logo_url": "https://cdn.simpleicons.org/grafana",
       "license": "AGPL-3.0-only",
@@ -59,7 +59,7 @@
     },
     {
       "name": "Vikunja",
-      "category": "Task management",
+      "category": "Project & task management",
       "project_url": "https://vikunja.io/",
       "logo_url": "https://cdn.simpleicons.org/vikunja",
       "license": "AGPL-3.0",
@@ -69,7 +69,7 @@
     },
     {
       "name": "Nextcloud",
-      "category": "File sync / collaboration",
+      "category": "File sync & collaboration",
       "oidc_status": "extension",
       "project_url": "https://nextcloud.com/",
       "logo_url": "https://cdn.simpleicons.org/nextcloud",
@@ -80,7 +80,7 @@
     },
     {
       "name": "Matrix Synapse",
-      "category": "Messaging / federation",
+      "category": "Messaging & federation",
       "project_url": "https://github.com/element-hq/synapse",
       "logo_url": "https://cdn.simpleicons.org/matrix",
       "license": "AGPL-3.0",
@@ -90,7 +90,7 @@
     },
     {
       "name": "Argo CD",
-      "category": "Git hosting / DevOps",
+      "category": "Git hosting & DevOps",
       "project_url": "https://argo-cd.readthedocs.io/",
       "logo_url": "https://raw.githubusercontent.com/argoproj/argo-cd/master/ui/src/assets/images/argologo.svg",
       "license": "Apache-2.0",
@@ -142,7 +142,7 @@
     },
     {
       "name": "Windshift",
-      "category": "Project management",
+      "category": "Project & task management",
       "project_url": "https://github.com/Windshiftapp/core",
       "logo_url": "https://raw.githubusercontent.com/Windshiftapp/core/main/frontend/public/windshift-3.svg",
       "license": "AGPL-3.0",
@@ -152,7 +152,7 @@
     },
     {
       "name": "Outline",
-      "category": "Documentation / wiki",
+      "category": "Documentation & wiki",
       "project_url": "https://github.com/outline/outline",
       "logo_url": "https://cdn.simpleicons.org/outline",
       "license": "BSL-1.1",
@@ -182,7 +182,7 @@
     },
     {
       "name": "OpenSearch Dashboards",
-      "category": "Search / analytics",
+      "category": "Search & analytics",
       "project_url": "https://opensearch.org/",
       "logo_url": "https://cdn.simpleicons.org/opensearch",
       "license": "Apache-2.0",
@@ -212,13 +212,118 @@
     },
     {
       "name": "Zammad",
-      "category": "Helpdesk / customer support",
+      "category": "Helpdesk & customer support",
       "project_url": "https://github.com/zammad/zammad",
       "logo_url": "https://raw.githubusercontent.com/zammad/zammad/develop/app/frontend/apps/desktop/initializer/assets/logo.svg",
       "license": "AGPL-3.0-only",
       "oidc_support": "Built-in",
       "description": "An open-source, self-hosted helpdesk platform with built-in OpenID Connect authentication; its free AGPL edition does not require an SSO add-on.",
       "documentation_url": "https://zammad.com/en/product/features"
+    },
+    {
+      "name": "Firezone",
+      "category": "Remote access & VPN",
+      "project_url": "https://github.com/firezone/firezone",
+      "logo_url": "https://raw.githubusercontent.com/firezone/firezone/main/elixir/priv/static/images/logo.svg",
+      "license": "Apache-2.0",
+      "oidc_support": "Built-in",
+      "description": "An open-source, self-hosted remote access gateway built on WireGuard that supports login through OIDC-compatible identity providers.",
+      "documentation_url": "https://www.firezone.dev/kb"
+    },
+    {
+      "name": "Pomerium",
+      "category": "Reverse proxy & access gateway",
+      "project_url": "https://www.pomerium.com/",
+      "logo_url": "https://cdn.simpleicons.org/pomerium",
+      "license": "Apache-2.0",
+      "oidc_support": "Built-in",
+      "description": "An identity-aware reverse proxy that provides OIDC authentication and access policies in front of self-hosted applications.",
+      "documentation_url": "https://www.pomerium.com/docs/integrations/user-identity/oidc"
+    },
+    {
+      "name": "VoucherVault",
+      "category": "Personal finance & household management",
+      "project_url": "https://github.com/l4rm4nd/VoucherVault",
+      "logo_url": "https://raw.githubusercontent.com/l4rm4nd/VoucherVault/main/myapp/static/assets/img/logo.svg",
+      "license": "GPL-3.0",
+      "oidc_support": "Built-in",
+      "description": "A self-hosted manager for vouchers, coupons, loyalty cards, and gift cards with configurable OIDC single sign-on.",
+      "documentation_url": "https://github.com/l4rm4nd/VoucherVault/wiki/02-%E2%80%90-Authentication#oidc-authentication"
+    },
+    {
+      "name": "Proxmox VE",
+      "category": "Virtualization & infrastructure",
+      "project_url": "https://www.proxmox.com/en/proxmox-virtual-environment",
+      "logo_url": "https://cdn.simpleicons.org/proxmox",
+      "license": "AGPL-3.0-only",
+      "oidc_support": "Built-in",
+      "description": "An open-source virtualization platform for KVM virtual machines and LXC containers with a built-in OpenID Connect authentication realm.",
+      "documentation_url": "https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_authentication_realm_openid"
+    },
+    {
+      "name": "Jenkins",
+      "category": "Git hosting & DevOps",
+      "project_url": "https://www.jenkins.io/",
+      "logo_url": "https://cdn.simpleicons.org/jenkins",
+      "license": "MIT",
+      "oidc_status": "extension",
+      "oidc_support": "Free OpenID Connect Authentication plugin",
+      "description": "A self-hosted automation server that can authenticate users with OIDC using the free OpenID Connect Authentication plugin.",
+      "documentation_url": "https://plugins.jenkins.io/oic-auth/"
+    },
+    {
+      "name": "MediaWiki",
+      "category": "Documentation & wiki",
+      "project_url": "https://www.mediawiki.org/",
+      "logo_url": "https://www.mediawiki.org/static/images/icons/mediawikiwiki.svg",
+      "license": "GPL-2.0-only",
+      "oidc_status": "extension",
+      "oidc_support": "Free OpenID Connect extension",
+      "description": "The wiki engine behind Wikipedia, with free OIDC login available through its OpenID Connect extension and PluggableAuth.",
+      "documentation_url": "https://www.mediawiki.org/wiki/Extension:OpenID_Connect"
+    },
+    {
+      "name": "WordPress",
+      "category": "CMS & publishing",
+      "project_url": "https://wordpress.org/",
+      "logo_url": "https://cdn.simpleicons.org/wordpress",
+      "license": "GPL-2.0-only",
+      "oidc_status": "extension",
+      "oidc_support": "Free OpenID Connect Generic Client plugin",
+      "description": "A widely used self-hosted CMS that supports OIDC login through the free OpenID Connect Generic Client plugin.",
+      "documentation_url": "https://wordpress.org/plugins/daggerhart-openid-connect-generic/"
+    },
+    {
+      "name": "Apache Airflow",
+      "category": "Generic automation",
+      "project_url": "https://airflow.apache.org/",
+      "logo_url": "https://raw.githubusercontent.com/apache/airflow/main/airflow-core/docs/img/logos/wordmark_1.svg",
+      "license": "Apache-2.0",
+      "oidc_status": "extension",
+      "oidc_support": "Free OAuth/OpenID support through the FAB auth provider",
+      "description": "A platform for authoring, scheduling, and monitoring workflows that supports OAuth and OpenID authentication through its Flask-AppBuilder auth provider.",
+      "documentation_url": "https://airflow.apache.org/docs/apache-airflow-providers-fab/stable/auth-manager/webserver-authentication.html"
+    },
+    {
+      "name": "Moodle",
+      "category": "Education & LMS",
+      "project_url": "https://moodle.org/",
+      "logo_url": "https://cdn.simpleicons.org/moodle",
+      "license": "GPL-3.0-only",
+      "oidc_status": "extension",
+      "oidc_support": "Free OpenID Connect Authentication plugin",
+      "description": "A widely used open-source learning management system with configurable OIDC single sign-on through a free authentication plugin.",
+      "documentation_url": "https://marketplace.moodle.com/plugins/auth_oidc"
+    },
+    {
+      "name": "Argo Workflows",
+      "category": "Git hosting & DevOps",
+      "project_url": "https://argoproj.github.io/workflows/",
+      "logo_url": "https://raw.githubusercontent.com/argoproj/argo-workflows/main/ui/src/assets/images/argologo.svg",
+      "license": "Apache-2.0",
+      "oidc_support": "Built-in SSO",
+      "description": "A Kubernetes-native workflow engine with built-in OAuth2/OIDC SSO support for the Argo Server UI and API.",
+      "documentation_url": "https://argo-workflows.readthedocs.io/en/latest/argo-server-sso/"
     }
   ]
 }
