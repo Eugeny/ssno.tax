@@ -285,7 +285,9 @@ body {
 
 .application-table th:nth-child(3),
 .application-table td:nth-child(3) {
-  width: 8%;
+  width: 5.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   text-align: center;
 }
 
