@@ -137,17 +137,21 @@ body {
   gap: 0.35rem;
 }
 
-.oidc-status {
+/* Traffic-light dots. One shared rule so the OIDC-support and repo-health
+   indicators render identically everywhere (same size, white bezel, ring). */
+.oidc-status,
+.repo-health {
   display: inline-block;
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.85rem;
+  height: 0.85rem;
   border: 2px solid #fff;
   border-radius: 50%;
   box-shadow: 0 0 0 1px #0f172a33, 0 1px 3px #0f172a55;
   vertical-align: middle;
 }
 
-.oidc-status--built-in {
+.oidc-status--built-in,
+.repo-health--green {
   background: #22c55e;
 }
 
@@ -256,44 +260,63 @@ body {
 
 .application-table {
   width: 100%;
-  min-width: 850px;
   border-collapse: collapse;
-  table-layout: fixed;
   text-align: left;
 }
 
-.application-table th:nth-child(1),
-.application-table td:nth-child(1) {
-  width: 17%;
-}
+/* Wide-screen column layout, scoped to desktop. These nth-child rules set
+   widths, centered text, and extra side padding; keeping them behind a
+   min-width query means they can never leak into the mobile card layout
+   below, which previously needed !important overrides to defeat them. */
+@media (min-width: 640px) {
+  .application-table {
+    min-width: 850px;
+    table-layout: fixed;
+  }
 
-.application-table th:nth-child(2),
-.application-table td:nth-child(2) {
-  width: 9%;
-  text-align: center;
-}
+  .application-table th:nth-child(1),
+  .application-table td:nth-child(1) {
+    width: 17%;
+  }
 
-.application-table th:nth-child(3),
-.application-table td:nth-child(3) {
-  width: 7%;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  text-align: center;
-}
+  .application-table th:nth-child(2),
+  .application-table td:nth-child(2) {
+    width: 9%;
+    text-align: center;
+  }
 
-.application-table th:nth-child(4),
-.application-table td:nth-child(4) {
-  width: 15%;
-}
+  .application-table th:nth-child(3),
+  .application-table td:nth-child(3) {
+    width: 7%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    text-align: center;
+  }
 
-.application-table th:nth-child(5),
-.application-table td:nth-child(5) {
-  width: 40%;
-}
+  .application-table th:nth-child(4),
+  .application-table td:nth-child(4) {
+    width: 15%;
+  }
 
-.application-table th:nth-child(6),
-.application-table td:nth-child(6) {
-  width: 12%;
+  .application-table th:nth-child(5),
+  .application-table td:nth-child(5) {
+    width: 40%;
+  }
+
+  .application-table th:nth-child(6),
+  .application-table td:nth-child(6) {
+    width: 12%;
+  }
+
+  .application-table td:nth-child(2),
+  .application-table td:nth-child(4) {
+    color: #475569;
+    font-size: 0.9rem;
+  }
+
+  .application-table td:nth-child(6) {
+    white-space: nowrap;
+  }
 }
 
 .application-table th,
@@ -345,12 +368,6 @@ body {
   object-fit: contain;
 }
 
-.application-table td:nth-child(2),
-.application-table td:nth-child(4) {
-  color: #475569;
-  font-size: 0.9rem;
-}
-
 .license-alert {
   display: inline-flex;
   align-items: center;
@@ -363,23 +380,6 @@ body {
   color: #dc2626;
   font-size: 1.1rem;
   line-height: 1;
-}
-
-.application-table td:nth-child(6) {
-  white-space: nowrap;
-}
-
-.repo-health {
-  display: inline-block;
-  width: 0.85rem;
-  height: 0.85rem;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px #0f172a33, 0 1px 3px #0f172a55;
-  vertical-align: middle;
-}
-
-.repo-health--green {
-  background: #16a34a;
 }
 
 .repo-health--red {
@@ -406,7 +406,7 @@ body {
   border: 0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639.98px) {
   .site-header {
     padding: 3rem 1rem 2.5rem;
   }
@@ -453,7 +453,9 @@ body {
 
   /* Turn each table row into a readable card instead of forcing a wide
      horizontal table on small screens. The data-label attributes are added
-     by the build script so every value keeps its column heading. */
+     by the build script so every value keeps its column heading. Desktop
+     column rules live behind min-width: 640px, so no !important overrides
+     are needed here. */
   .table-wrapper {
     overflow: visible;
   }
@@ -465,12 +467,6 @@ body {
   .application-table th,
   .application-table td {
     display: block;
-  }
-
-  .application-table {
-    width: 100%;
-    min-width: 0;
-    table-layout: auto;
   }
 
   .application-table thead {
@@ -503,15 +499,9 @@ body {
 
   .application-table th,
   .application-table td {
-    width: auto !important;
     min-width: 0;
-    padding: 0.45rem 0 !important;
+    padding: 0.45rem 0;
     border-bottom: 1px solid #e5e7eb;
-    /* Desktop rules style columns via nth-child selectors, which out-specify
-       this rule (e.g. centered text on the status columns, extra side padding
-       on column 3), so width/padding/text-align must be forced back here or
-       individual card rows end up misaligned on mobile. */
-    text-align: left !important;
   }
 
   .application-table th {
@@ -540,9 +530,5 @@ body {
 
   .application-name {
     min-width: 0;
-  }
-
-  .application-table td:nth-child(6) {
-    white-space: normal;
   }
 }
