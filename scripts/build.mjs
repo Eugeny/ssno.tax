@@ -90,11 +90,6 @@ const renderStatusLegend = () => `
     <div class="oidc-legend" aria-label="OIDC support legend">
       <span><span class="oidc-status oidc-status--built-in" aria-hidden="true"></span> Built-in</span>
       <span><span class="oidc-status oidc-status--extension" aria-hidden="true"></span> Extension required</span>
-    </div>
-    <div class="repo-health-legend" aria-label="Repository health legend">
-      <span><span class="repo-health repo-health--green" aria-hidden="true"></span> Active</span>
-      <span><span class="repo-health repo-health--red" aria-hidden="true"></span> Low activity</span>
-      <span><span class="repo-health repo-health--gray" aria-hidden="true"></span> No GitHub URL</span>
     </div>`;
 
 const renderNotes = (notes = []) => {
