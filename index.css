@@ -507,6 +507,10 @@ body {
     min-width: 0;
     padding: 0.45rem 0;
     border-bottom: 1px solid #e5e7eb;
+    /* Desktop rules center the status columns via nth-child selectors, which
+       out-specify this rule, so the alignment must be forced back here or the
+       card labels and values end up ragged/centered on mobile. */
+    text-align: left !important;
   }
 
   .application-table th {
