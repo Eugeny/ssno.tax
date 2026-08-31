@@ -275,7 +275,7 @@ body {
 
 .application-table th:nth-child(3),
 .application-table td:nth-child(3) {
-  width: 5.5rem;
+  width: 7%;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   text-align: center;
@@ -288,7 +288,7 @@ body {
 
 .application-table th:nth-child(5),
 .application-table td:nth-child(5) {
-  width: 39%;
+  width: 40%;
 }
 
 .application-table th:nth-child(6),
@@ -298,6 +298,7 @@ body {
 
 .application-table th,
 .application-table td {
+  box-sizing: border-box;
   padding: 1rem;
   vertical-align: top;
   overflow-wrap: anywhere;
