@@ -362,6 +362,7 @@
       "name": "Wiki.js",
       "category": "Documentation & wiki",
       "project_url": "https://js.wiki/",
+      "github_url": "https://github.com/requarks/wiki",
       "logo_url": "https://raw.githubusercontent.com/requarks/wiki/main/client/static/svg/logo-wikijs.svg",
       "license": "AGPL-3.0",
       "oidc_support": "Built-in generic OIDC strategy",
