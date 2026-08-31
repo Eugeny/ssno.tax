@@ -42,7 +42,7 @@
       "category": "Git hosting & DevOps",
       "project_url": "https://forgejo.org/",
       "logo_url": "https://cdn.simpleicons.org/forgejo",
-      "license": "GPL-3.0-only",
+      "license": "GPL 3",
       "oidc_support": "Built-in OAuth2/OIDC authentication source",
       "description": "A community-driven self-hosted Git forge with external authentication support for OIDC-compatible providers.",
       "documentation_url": "https://forgejo.org/docs/latest/admin/setup/authentication/"
@@ -165,7 +165,7 @@
       "category": "Document management",
       "project_url": "https://github.com/paperless-ngx/paperless-ngx",
       "logo_url": "https://cdn.simpleicons.org/paperlessngx",
-      "license": "GPL-3.0-only",
+      "license": "GPL 3",
       "oidc_support": "Built-in social authentication",
       "description": "A self-hosted document management system that supports generic OpenID Connect providers through its django-allauth integration.",
       "documentation_url": "https://docs.paperless-ngx.com/configuration/"
@@ -205,7 +205,7 @@
       "category": "Community forum",
       "project_url": "https://www.discourse.org/",
       "logo_url": "https://cdn.simpleicons.org/discourse",
-      "license": "GPL-2.0-only",
+      "license": "GPL 2",
       "oidc_support": "Built-in OIDC plugin",
       "description": "A self-hosted discussion platform with OpenID Connect authentication; the official OIDC plugin is now bundled into Discourse core.",
       "documentation_url": "https://meta.discourse.org/t/discourse-openid-connect-oidc/103632"
@@ -245,7 +245,7 @@
       "category": "Personal finance & household management",
       "project_url": "https://github.com/l4rm4nd/VoucherVault",
       "logo_url": "https://raw.githubusercontent.com/l4rm4nd/VoucherVault/main/myapp/static/assets/img/logo.svg",
-      "license": "GPL-3.0",
+      "license": "GPL 3",
       "oidc_support": "Built-in",
       "description": "A self-hosted manager for vouchers, coupons, loyalty cards, and gift cards with configurable OIDC single sign-on.",
       "documentation_url": "https://github.com/l4rm4nd/VoucherVault/wiki/02-%E2%80%90-Authentication#oidc-authentication"
@@ -276,7 +276,7 @@
       "category": "Documentation & wiki",
       "project_url": "https://www.mediawiki.org/",
       "logo_url": "https://www.mediawiki.org/static/images/icons/mediawikiwiki.svg",
-      "license": "GPL-2.0-only",
+      "license": "GPL 2",
       "oidc_status": "extension",
       "oidc_support": "Free OpenID Connect extension",
       "description": "The wiki engine behind Wikipedia, with free OIDC login available through its OpenID Connect extension and PluggableAuth.",
@@ -287,7 +287,7 @@
       "category": "CMS & publishing",
       "project_url": "https://wordpress.org/",
       "logo_url": "https://cdn.simpleicons.org/wordpress",
-      "license": "GPL-2.0-only",
+      "license": "GPL 2",
       "oidc_status": "extension",
       "oidc_support": "Free OpenID Connect Generic Client plugin",
       "description": "A widely used self-hosted CMS that supports OIDC login through the free OpenID Connect Generic Client plugin.",
@@ -309,7 +309,7 @@
       "category": "Education & LMS",
       "project_url": "https://moodle.org/",
       "logo_url": "https://cdn.simpleicons.org/moodle",
-      "license": "GPL-3.0-only",
+      "license": "GPL 3",
       "oidc_status": "extension",
       "oidc_support": "Free OpenID Connect Authentication plugin",
       "description": "A widely used open-source learning management system with configurable OIDC single sign-on through a free authentication plugin.",
@@ -317,13 +317,43 @@
     },
     {
       "name": "Argo Workflows",
-      "category": "Git hosting & DevOps",
+      "category": "Generic automation",
       "project_url": "https://argoproj.github.io/workflows/",
       "logo_url": "https://raw.githubusercontent.com/argoproj/argo-workflows/main/ui/src/assets/images/argologo.svg",
       "license": "Apache-2.0",
       "oidc_support": "Built-in SSO",
       "description": "A Kubernetes-native workflow engine with built-in OAuth2/OIDC SSO support for the Argo Server UI and API.",
       "documentation_url": "https://argo-workflows.readthedocs.io/en/latest/argo-server-sso/"
+    },
+    {
+      "name": "Leantime",
+      "category": "Project & task management",
+      "project_url": "https://leantime.io/",
+      "logo_url": "https://github.com/Leantime/leantime.png?size=64",
+      "license": "AGPL-3.0",
+      "oidc_support": "Built-in in the free edition",
+      "description": "An open-source, self-hosted project management platform with task boards, project planning, wikis, and OIDC integration included in the OSS version.",
+      "documentation_url": "https://github.com/Leantime/leantime/wiki/Configuration"
+    },
+    {
+      "name": "Wiki.js",
+      "category": "Documentation & wiki",
+      "project_url": "https://js.wiki/",
+      "logo_url": "https://github.com/requarks/wiki.png?size=64",
+      "license": "AGPL-3.0",
+      "oidc_support": "Built-in generic OIDC strategy",
+      "description": "A self-hosted wiki and knowledge base with a built-in generic OpenID Connect authentication strategy.",
+      "documentation_url": "https://github.com/requarks/wiki/tree/main/server/modules/authentication/oidc"
+    },
+    {
+      "name": "HedgeDoc",
+      "category": "Documentation & wiki",
+      "project_url": "https://hedgedoc.org/",
+      "logo_url": "https://github.com/hedgedoc/hedgedoc.png?size=64",
+      "license": "AGPL-3.0",
+      "oidc_support": "Built-in",
+      "description": "A self-hosted collaborative Markdown editor and knowledge-sharing platform that supports one or more generic OIDC providers.",
+      "documentation_url": "https://github.com/hedgedoc/hedgedoc/blob/develop/docs/content/references/config/auth/oidc.md"
     }
   ]
 }
