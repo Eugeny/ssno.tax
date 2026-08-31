@@ -22,10 +22,5 @@ The build escapes catalog values and only emits `http`/`https` links.
 
 ## Cloudflare Pages deployment
 
-Cloudflare Pages can build and deploy directly from the connected GitHub repository. Configure the project with:
+This repo gets auto deployed by Cloudflare when main is pushed to. Submit your PRs and they will go live once reviewed
 
-- Root directory: `/`
-- Build command: `npm run build`
-- Build output directory: `dist`
-
-No GitHub Actions workflow or Cloudflare API secrets are required. Cloudflare runs the build whenever the configured branch receives a new commit.
