@@ -1,0 +1,13 @@
+{
+  "name": "oidc-applications-catalog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && vite --config vite.config.mjs",
+    "preview": "vite preview --config vite.config.mjs"
+  },
+  "devDependencies": {
+    "vite": "^8.2.2"
+  }
+}
