@@ -376,6 +376,17 @@
       "oidc_support": "Free OpenID Connect plugin",
       "description": "An open-source project management and issue-tracking application with OIDC login available through a free community plugin.",
       "documentation_url": "https://github.com/nanego/redmine_omniauth_oidc#readme"
+    },
+    {
+      "name": "Wekan",
+      "category": "Project & task management",
+      "project_url": "https://wekan.github.io/",
+      "logo_url": "https://raw.githubusercontent.com/wekan/wekan/master/public/favicon.ico",
+      "license": "MIT",
+      "oidc_status": "extension",
+      "oidc_support": "Built-in OAuth2/OIDC login",
+      "description": "An open-source, self-hosted kanban board for organizing projects and tasks, with OAuth2/OIDC login and automatic registration support.",
+      "documentation_url": "https://github.com/wekan/wekan/blob/master/docs/Features/Login/OAuth2.md"
     }
   ]
 }
