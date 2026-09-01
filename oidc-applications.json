@@ -5,7 +5,8 @@
     "You still need an OIDC identity provider, such as Keycloak, authentik, or Zitadel.",
     "Hosting, support, advanced provisioning, and group-sync features may have separate commercial offerings. Verify the feature against the version you deploy.",
     "Outline is included because its free self-hosted edition includes OIDC, but its current BSL-1.1 license is not OSI-approved open source.",
-    "Directus is included because its self-hosted edition includes OIDC without a paid add-on, but its current MSCL-1.0 license is source-available rather than OSI-approved open source."
+    "Directus is included because its self-hosted edition includes OIDC without a paid add-on, but its current MSCL-1.0 license is source-available rather than OSI-approved open source.",
+    "HashiCorp Vault is included because its self-hosted edition includes OIDC login without a paid add-on, but its current BSL-1.1 license is not OSI-approved open source."
   ],
   "applications": [
     {
@@ -636,6 +637,102 @@
       "license": "GPL-3.0 (ERPNext) / MIT (Frappe framework)",
       "description": "An open-source self-hosted ERP suite whose underlying Frappe framework provides free OpenID Connect login through Social Login Keys, including Keycloak and custom OIDC providers.",
       "documentation_url": "https://docs.frappe.io/framework/user/en/guides/integration/openid_connect_and_frappe_social_login"
+    },
+    {
+      "name": "oauth2-proxy",
+      "category": "Reverse proxy & access gateway",
+      "project_url": "https://oauth2-proxy.dev/",
+      "github_url": "https://github.com/oauth2-proxy/oauth2-proxy",
+      "license": "MIT",
+      "description": "A CNCF sandbox reverse proxy and middleware that authenticates users against any OpenID Connect provider and forwards identity headers to upstream applications.",
+      "documentation_url": "https://oauth2-proxy.github.io/oauth2-proxy/configuration/providers/openid_connect/"
+    },
+    {
+      "name": "Headscale",
+      "category": "Remote access & VPN",
+      "project_url": "https://headscale.net",
+      "github_url": "https://github.com/juanfont/headscale",
+      "license": "BSD-3-Clause",
+      "description": "A self-hosted Tailscale-compatible mesh VPN control server with OpenID Connect login, automatic configuration via discovery, and user filtering by domain, email, or group.",
+      "documentation_url": "https://headscale.net/stable/ref/oidc/"
+    },
+    {
+      "name": "Ghostfolio",
+      "category": "Personal finance & household management",
+      "project_url": "https://ghostfol.io",
+      "github_url": "https://github.com/ghostfolio/ghostfolio",
+      "logo_url": "https://cdn.simpleicons.org/ghostfolio",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted wealth management tracker for portfolios and assets with experimental OpenID Connect sign-in via issuer discovery and configurable scopes.",
+      "documentation_url": "https://github.com/ghostfolio/ghostfolio#openid-connect-oidc-experimental"
+    },
+    {
+      "name": "Karakeep",
+      "category": "Bookmarks & read-it-later",
+      "project_url": "https://karakeep.app",
+      "github_url": "https://github.com/karakeep-app/karakeep",
+      "logo_url": "https://cdn.simpleicons.org/karakeep",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted bookmark-everything app for links, notes, and images with AI tagging that supports OIDC-compliant providers through its built-in OAuth configuration.",
+      "documentation_url": "https://docs.karakeep.app/configuration/environment-variables/"
+    },
+    {
+      "name": "Docspell",
+      "category": "Document management",
+      "project_url": "https://docspell.org",
+      "github_url": "https://github.com/eikek/docspell",
+      "license": "AGPL-3.0-or-later",
+      "description": "A self-hosted document organizer with OCR and full-text search that integrates into single sign-on solutions via OpenID Connect.",
+      "documentation_url": "https://docspell.org/docs/configure/authentication/#openid-connect-oauth2"
+    },
+    {
+      "name": "Concourse",
+      "category": "Git hosting & DevOps",
+      "project_url": "https://concourse-ci.org",
+      "github_url": "https://github.com/concourse/concourse",
+      "logo_url": "https://cdn.simpleicons.org/concourse",
+      "license": "Apache-2.0",
+      "description": "A container-native continuous integration system with a built-in generic OpenID Connect auth connector that only needs an issuer URL and supports per-team user and group authorization.",
+      "documentation_url": "https://concourse-ci.org/docs/auth-and-teams/configuring/generic-oidc/"
+    },
+    {
+      "name": "Alerta",
+      "category": "Observability & dashboards",
+      "project_url": "https://alerta.io/",
+      "github_url": "https://github.com/alerta/alerta",
+      "license": "Apache-2.0",
+      "description": "A self-hosted alert monitoring and dashboard tool for consolidating alerts from multiple sources, with generic OpenID Connect authentication and role and group claims.",
+      "documentation_url": "https://docs.alerta.io/authentication.html"
+    },
+    {
+      "name": "RomM",
+      "category": "Game library management",
+      "project_url": "https://romm.app",
+      "github_url": "https://github.com/rommapp/romm",
+      "logo_url": "https://romm.app/images/blocks/logos/romm.svg",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted ROM library manager with metadata scraping that supports any OpenID Connect provider, including auto-provisioning, role mapping, and SSO-only login.",
+      "documentation_url": "https://docs.romm.app/latest/administration/oidc/"
+    },
+    {
+      "name": "ownCloud Infinite Scale",
+      "category": "File sync & collaboration",
+      "project_url": "https://owncloud.com/infinite-scale/",
+      "github_url": "https://github.com/owncloud/ocis",
+      "logo_url": "https://cdn.simpleicons.org/owncloud",
+      "license": "Apache-2.0",
+      "description": "A self-hosted file sync and sharing platform written in Go that authenticates users through OpenID Connect using its embedded identity provider or an external one such as Keycloak.",
+      "documentation_url": "https://owncloud.dev/ocis/deployment/ocis_keycloak/"
+    },
+    {
+      "name": "HashiCorp Vault",
+      "category": "Secrets management",
+      "project_url": "https://www.vaultproject.io",
+      "github_url": "https://github.com/hashicorp/vault",
+      "logo_url": "https://cdn.simpleicons.org/vault",
+      "license": "BSL-1.1",
+      "description": "A self-hosted secrets and identity platform whose JWT/OIDC auth method provides browser-based OpenID Connect login for the UI and CLI in the free self-hosted edition.",
+      "documentation_url": "https://developer.hashicorp.com/vault/docs/auth/jwt"
     }
   ]
 }

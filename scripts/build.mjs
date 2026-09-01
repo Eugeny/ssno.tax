@@ -282,8 +282,8 @@ const generatedContent = `
     <p class="catalog-count">${data.applications.length} applications</p>
     ${renderStatusLegend()}
     ${renderFilters(categoryEntries)}
-    ${renderNotes(data.notes)}
     ${categoryEntries.map(renderCategory).join("\n")}
+    ${renderNotes(data.notes)}
   </div>`;
 
 const markerCount = shell.split(marker).length - 1;
