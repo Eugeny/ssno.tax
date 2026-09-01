@@ -4,9 +4,7 @@
     "These projects can be self-hosted and provide basic OIDC/OAuth2 login without buying an SSO add-on.",
     "You still need an OIDC identity provider, such as Keycloak, authentik, or Zitadel.",
     "Hosting, support, advanced provisioning, and group-sync features may have separate commercial offerings. Verify the feature against the version you deploy.",
-    "Outline is included because its free self-hosted edition includes OIDC, but its current BSL-1.1 license is not OSI-approved open source.",
-    "Directus is included because its self-hosted edition includes OIDC without a paid add-on, but its current MSCL-1.0 license is source-available rather than OSI-approved open source.",
-    "HashiCorp Vault is included because its self-hosted edition includes OIDC login without a paid add-on, but its current BSL-1.1 license is not OSI-approved open source."
+    "Outline, Directus, HashiCorp Vault & Boundary are included because their free self-hosted edition includes OIDC, but their current BSL and MSCL licenses are not OSI-approved open source.",
   ],
   "applications": [
     {
@@ -743,6 +741,196 @@
       "license": "BSL-1.1",
       "description": "A self-hosted secrets and identity platform whose JWT/OIDC auth method provides browser-based OpenID Connect login for the UI and CLI in the free self-hosted edition.",
       "documentation_url": "https://developer.hashicorp.com/vault/docs/auth/jwt"
+    },
+    {
+      "name": "Mattermost",
+      "category": "Team chat",
+      "project_url": "https://mattermost.com/",
+      "github_url": "https://github.com/mattermost/mattermost",
+      "logo_url": "https://cdn.simpleicons.org/mattermost",
+      "license": "MIT (open source build) / commercial Enterprise Edition license",
+      "description": "A self-hosted team collaboration platform whose free edition supports generic OpenID Connect providers for account creation and user login, while SAML and AD/LDAP require paid subscriptions.",
+      "documentation_url": "https://docs.mattermost.com/administration-guide/onboard/sso-openidconnect.html"
+    },
+    {
+      "name": "Rocket.Chat",
+      "category": "Team chat",
+      "project_url": "https://www.rocket.chat/",
+      "github_url": "https://github.com/RocketChat/Rocket.Chat",
+      "logo_url": "https://cdn.simpleicons.org/rocketdotchat",
+      "license": "MIT (Community Edition) / commercial licenses for enterprise packages",
+      "description": "A self-hosted team chat platform whose community edition includes configurable custom OAuth providers that work with any OpenID Connect identity provider.",
+      "documentation_url": "https://docs.rocket.chat/docs/oauth"
+    },
+    {
+      "name": "Gatus",
+      "category": "Observability & dashboards",
+      "project_url": "https://gatus.io/",
+      "github_url": "https://github.com/TwiN/gatus",
+      "license": "Apache-2.0",
+      "description": "A self-hosted health-check and status-page dashboard that can delegate authentication for its UI and API to an OpenID Connect provider.",
+      "documentation_url": "https://github.com/TwiN/gatus#oidc"
+    },
+    {
+      "name": "Temporal UI",
+      "category": "Developer platforms",
+      "project_url": "https://temporal.io/",
+      "github_url": "https://github.com/temporalio/ui",
+      "logo_url": "https://cdn.simpleicons.org/temporal",
+      "license": "MIT",
+      "description": "The web interface for self-hosted Temporal workloads supports OAuth2/OIDC single sign-on with automatic token refresh in its open-source server.",
+      "documentation_url": "https://github.com/temporalio/ui/blob/main/AUTHENTICATION.md"
+    },
+    {
+      "name": "Mailcow",
+      "category": "Mail server",
+      "project_url": "https://mailcow.email/",
+      "github_url": "https://github.com/mailcow/mailcow-dockerized",
+      "license": "GPL-3.0",
+      "description": "A self-hosted full-featured mail server suite whose UI and SOGo webmail support generic OpenID Connect single sign-on.",
+      "documentation_url": "https://docs.mailcow.email/manual-guides/mailcow-UI/u_e-mailcow_ui-generic-oidc/"
+    },
+    {
+      "name": "Listmonk",
+      "category": "Newsletter & mailing lists",
+      "project_url": "https://listmonk.app/",
+      "github_url": "https://github.com/knadh/listmonk",
+      "logo_url": "https://cdn.simpleicons.org/listmonk",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted newsletter and mailing-list manager with built-in single sign-on through OpenID Connect providers.",
+      "documentation_url": "https://listmonk.app/docs/oidc/"
+    },
+    {
+      "name": "Pingvin Share",
+      "category": "File sharing",
+      "project_url": "https://stonith404.github.io/pingvin-share/",
+      "github_url": "https://github.com/stonith404/pingvin-share",
+      "license": "BSD-2-Clause",
+      "description": "A self-hosted file-sharing platform that includes OpenID Connect and LDAP authentication alongside local accounts.",
+      "documentation_url": "https://stonith404.github.io/pingvin-share/setup/oauth2login"
+    },
+    {
+      "name": "CryptPad",
+      "category": "File sync & collaboration",
+      "project_url": "https://cryptpad.org/",
+      "github_url": "https://github.com/cryptpad/cryptpad",
+      "logo_url": "https://cdn.simpleicons.org/cryptpad",
+      "license": "AGPL-3.0",
+      "description": "An end-to-end-encrypted collaborative office suite whose self-hosted instance can delegate account creation and login to OpenID Connect identity providers.",
+      "documentation_url": "https://docs.cryptpad.org/en/admin_guide/admin_panel.html"
+    },
+    {
+      "name": "Stirling PDF",
+      "category": "Document management",
+      "project_url": "https://stirlingpdf.com/",
+      "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "license": "MIT",
+      "description": "A self-hosted PDF toolbox with user management that supports OAuth2/OIDC login in the free edition, including auto-creation of users from provider claims.",
+      "documentation_url": "https://docs.stirlingpdf.com/Configuration/Security/OAuth%20SSO%20Configuration/"
+    },
+    {
+      "name": "Xen Orchestra",
+      "category": "Virtualization & infrastructure",
+      "project_url": "https://xen-orchestra.com/",
+      "github_url": "https://github.com/vatesfr/xen-orchestra",
+      "license": "AGPL-3.0",
+      "description": "A web-based management console for XCP-ng/XenServer hosts whose bundled auth-oidc plugin adds OpenID Connect login in the open-source build.",
+      "documentation_url": "https://docs.xen-orchestra.com/xo5/users"
+    },
+    {
+      "name": "Headlamp",
+      "category": "Kubernetes management",
+      "project_url": "https://headlamp.dev/",
+      "github_url": "https://github.com/kubernetes-sigs/headlamp",
+      "license": "Apache-2.0",
+      "description": "A Kubernetes web UI that supports logging in through OpenID Connect, both in-cluster via the API server OIDC configuration and with static OIDC credentials.",
+      "documentation_url": "https://headlamp.dev/docs/latest/installation/in-cluster/oidc/"
+    },
+    {
+      "name": "HashiCorp Boundary",
+      "category": "Secrets management",
+      "project_url": "https://www.boundaryproject.io/",
+      "github_url": "https://github.com/hashicorp/boundary",
+      "license": "BSL-1.1",
+      "description": "A self-hosted identity-aware access proxy for infrastructure whose OpenID Connect auth method lets users sign in through any compliant identity provider.",
+      "documentation_url": "https://developer.hashicorp.com/boundary/docs/authentication/oidc/auth0"
+    },
+    {
+      "name": "OpenBao",
+      "category": "Secrets management",
+      "project_url": "https://openbao.org/",
+      "github_url": "https://github.com/openbao/openbao",
+      "logo_url": "https://cdn.simpleicons.org/openbao",
+      "license": "MPL-2.0",
+      "description": "A community-driven, open-source secrets manager whose JWT/OIDC auth method provides browser-based OpenID Connect login for the UI and CLI.",
+      "documentation_url": "https://openbao.org/docs/auth/jwt/"
+    },
+    {
+      "name": "Homarr",
+      "category": "Dashboards",
+      "project_url": "https://homarr.dev/",
+      "github_url": "https://github.com/homarr-labs/homarr",
+      "logo_url": "https://cdn.simpleicons.org/homarr",
+      "license": "Apache-2.0",
+      "description": "A self-hosted dashboard for managing apps and servers that supports signing in through external OpenID Connect providers with group-based permission mapping.",
+      "documentation_url": "https://homarr.dev/docs/advanced/single-sign-on/"
+    },
+    {
+      "name": "Homepage by gethomepage",
+      "category": "Dashboards",
+      "project_url": "https://gethomepage.dev/",
+      "github_url": "https://github.com/gethomepage/homepage",
+      "license": "GPL-3.0",
+      "description": "A self-hosted, highly customizable homepage dashboard whose built-in authentication gate supports OpenID Connect login alongside a simple password.",
+      "documentation_url": "https://gethomepage.dev/installation/#authentication"
+    },
+    {
+      "name": "Homebox",
+      "category": "Personal finance & household management",
+      "project_url": "https://homebox.software/",
+      "github_url": "https://github.com/sysadminsmedia/homebox",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted home inventory and organization system with built-in OpenID Connect single sign-on for user login.",
+      "documentation_url": "https://homebox.software/en/quick-start/configure/oidc/"
+    },
+    {
+      "name": "Gameyfin",
+      "category": "Game library management",
+      "project_url": "https://gameyfin.org/",
+      "github_url": "https://github.com/gameyfin/gameyfin",
+      "logo_url": "https://gameyfin.org/assets/logo.svg",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted game library manager that integrates with SSO solutions through OAuth2/OpenID Connect for authentication.",
+      "documentation_url": "https://gameyfin.org/configuration/sso/"
+    },
+    {
+      "name": "Greenlight (BigBlueButton)",
+      "category": "Video conferencing",
+      "project_url": "https://bigbluebutton.org/",
+      "github_url": "https://github.com/bigbluebutton/greenlight",
+      "logo_url": "https://cdn.simpleicons.org/bigbluebutton",
+      "license": "LGPL-3.0",
+      "description": "The default room-management front end for self-hosted BigBlueButton servers offers external authentication through OpenID Connect or Keycloak.",
+      "documentation_url": "https://docs.bigbluebutton.org/greenlight/v3/external-authentication/"
+    },
+    {
+      "name": "Nautobot",
+      "category": "Virtualization & infrastructure",
+      "project_url": "https://nautobot.com/",
+      "github_url": "https://github.com/nautobot/nautobot",
+      "license": "Apache-2.0",
+      "description": "A self-hosted network source-of-truth and automation platform with out-of-the-box single sign-on via OpenID Connect or SAML through python-social-auth.",
+      "documentation_url": "https://docs.nautobot.com/projects/core/en/stable/user-guide/administration/configuration/authentication/sso/"
+    },
+    {
+      "name": "Budibase",
+      "category": "Low-code app builders",
+      "project_url": "https://budibase.com/",
+      "github_url": "https://github.com/Budibase/budibase",
+      "logo_url": "https://cdn.simpleicons.org/budibase",
+      "license": "GPL-3.0 (server) / per-package licenses",
+      "description": "A self-hosted low-code platform for building internal apps and admin panels whose free tier includes OpenID Connect single sign-on.",
+      "documentation_url": "https://docs.budibase.com/docs/openid-connect"
     }
   ]
 }
