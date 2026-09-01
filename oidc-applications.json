@@ -931,6 +931,16 @@
       "license": "GPL-3.0 (server) / per-package licenses",
       "description": "A self-hosted low-code platform for building internal apps and admin panels whose free tier includes OpenID Connect single sign-on.",
       "documentation_url": "https://docs.budibase.com/docs/openid-connect"
+    },
+    {
+      "name": "Warpgate",
+      "category": "Remote access & VPN",
+      "project_url": "https://warpgate.null.page/",
+      "github_url": "https://github.com/warp-tech/warpgate",
+      "logo_url": "https://raw.githubusercontent.com/warp-tech/warpgate/refs/heads/main/warpgate-web/public/assets/favicon.svg",
+      "license": "Apache-2.0",
+      "description": "An open-source bastion and access gateway for SSH, HTTPS, Kubernetes, databases, RDP, and VNC with built-in OpenID Connect SSO, role-based access control, and session auditing.",
+      "documentation_url": "https://warpgate.null.page/sso/"
     }
   ]
 }
