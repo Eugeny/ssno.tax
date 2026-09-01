@@ -623,7 +623,7 @@
       "project_url": "https://directus.com",
       "github_url": "https://github.com/directus/directus",
       "logo_url": "https://cdn.simpleicons.org/directus",
-      "license": "MSCL-1.0 (source-available)",
+      "license": "MSCL-1.0",
       "description": "A self-hosted data platform and headless CMS with OpenID Connect SSO and role mapping from OIDC groups, included without a paid SSO add-on.",
       "documentation_url": "https://directus.com/docs/configuration/auth-sso"
     },
