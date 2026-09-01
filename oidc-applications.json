@@ -534,11 +534,86 @@
       "category": "Notes & knowledge management",
       "project_url": "https://usememos.com/",
       "github_url": "https://github.com/usememos/memos",
-      "logo_url": "https://usememos.com/logo-rounded.png",
+      "logo_url": "https://usememos.com/logo-96.png",
       "license": "MIT",
       "oidc_support": "Built-in configurable OAuth2/OIDC SSO",
       "description": "A popular self-hosted notes and knowledge-base application with configurable OAuth2/OIDC providers, linked identities, and SSO-only login options.",
       "documentation_url": "https://usememos.com/docs/configuration/authentication"
+    },
+    {
+      "name": "Mastodon",
+      "category": "Messaging & federation",
+      "project_url": "https://joinmastodon.org/",
+      "github_url": "https://github.com/mastodon/mastodon",
+      "logo_url": "https://cdn.simpleicons.org/mastodon",
+      "license": "AGPL-3.0-only",
+      "oidc_support": "Built-in OmniAuth OpenID Connect",
+      "description": "Decentralized social network server with OmniAuth support for OpenID Connect identity providers, allowing users to sign in with an external SSO account.",
+      "documentation_url": "https://docs.joinmastodon.org/spec/oauth/"
+    },
+    {
+      "name": "Weblate",
+      "category": "Localization & translation",
+      "project_url": "https://weblate.org/",
+      "github_url": "https://github.com/WeblateOrg/weblate",
+      "logo_url": "https://cdn.simpleicons.org/weblate",
+      "license": "GPL-3.0-or-later",
+      "oidc_support": "Built-in OpenID Connect (python-social-auth)",
+      "description": "A web-based translation management system with built-in OpenID Connect authentication for signing in through a generic OIDC provider.",
+      "documentation_url": "https://docs.weblate.org/en/latest/admin/auth.html"
+    },
+    {
+      "name": "Miniflux",
+      "category": "RSS & news readers",
+      "project_url": "https://miniflux.app/",
+      "github_url": "https://github.com/miniflux/v2",
+      "license": "Apache-2.0",
+      "oidc_support": "Built-in OIDC (OAuth2 provider option)",
+      "description": "A minimalist and opinionated RSS reader with native OpenID Connect support through its OAuth2 authentication configuration.",
+      "documentation_url": "https://miniflux.app/docs/configuration.html"
+    },
+    {
+      "name": "MinIO",
+      "category": "Object storage",
+      "project_url": "https://min.io/",
+      "github_url": "https://github.com/minio/minio",
+      "logo_url": "https://cdn.simpleicons.org/minio",
+      "license": "AGPL-3.0-only",
+      "oidc_support": "Built-in OpenID Connect identity provider support",
+      "description": "An S3-compatible object storage server that accepts OpenID Connect identity providers for federated user authentication.",
+      "documentation_url": "https://min.io/docs/minio/linux/administration/identity-access-management.html"
+    },
+    {
+      "name": "Penpot",
+      "category": "Design & prototyping",
+      "project_url": "https://penpot.app/",
+      "github_url": "https://github.com/penpot/penpot",
+      "logo_url": "https://cdn.simpleicons.org/penpot",
+      "license": "MPL-2.0",
+      "oidc_support": "Built-in OpenID Connect",
+      "description": "An open-source design and prototyping platform whose self-hosted backend supports OpenID Connect for user authentication.",
+      "documentation_url": "https://help.penpot.app/technical-guide/configuration/#authentication-providers"
+    },
+    {
+      "name": "Portainer CE",
+      "category": "Container management",
+      "project_url": "https://www.portainer.io/",
+      "github_url": "https://github.com/portainer/portainer",
+      "logo_url": "https://cdn.simpleicons.org/portainer",
+      "license": "zlib",
+      "oidc_support": "Built-in OAuth2/OIDC (custom provider)",
+      "description": "A container management UI for Docker and Kubernetes with built-in OAuth2 authentication that works with any OIDC provider via the custom provider settings.",
+      "documentation_url": "https://docs.portainer.io/admin/settings/authentication/oauth"
+    },
+    {
+      "name": "Rallly",
+      "category": "Scheduling & meetings",
+      "project_url": "https://rallly.co/",
+      "github_url": "https://github.com/lukevella/rallly",
+      "license": "AGPL-3.0-only",
+      "oidc_support": "Built-in OpenID Connect",
+      "description": "A self-hosted scheduling and collaboration tool for group meetings with single sign-on through any OpenID Connect provider.",
+      "documentation_url": "https://support.rallly.co/self-hosting/single-sign-on"
     }
   ]
 }
