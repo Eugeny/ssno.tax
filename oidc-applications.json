@@ -4,7 +4,8 @@
     "These projects can be self-hosted and provide basic OIDC/OAuth2 login without buying an SSO add-on.",
     "You still need an OIDC identity provider, such as Keycloak, authentik, or Zitadel.",
     "Hosting, support, advanced provisioning, and group-sync features may have separate commercial offerings. Verify the feature against the version you deploy.",
-    "Outline is included because its free self-hosted edition includes OIDC, but its current BSL-1.1 license is not OSI-approved open source."
+    "Outline is included because its free self-hosted edition includes OIDC, but its current BSL-1.1 license is not OSI-approved open source.",
+    "Directus is included because its self-hosted edition includes OIDC without a paid add-on, but its current MSCL-1.0 license is source-available rather than OSI-approved open source."
   ],
   "applications": [
     {
@@ -13,7 +14,6 @@
       "project_url": "https://www.bookstackapp.com/",
       "logo_url": "https://cdn.simpleicons.org/bookstack",
       "license": "MIT",
-      "oidc_support": "Built-in",
       "description": "A self-hosted documentation and wiki platform with built-in OpenID Connect authentication, user matching, and optional group sync.",
       "documentation_url": "https://www.bookstackapp.com/docs/admin/oidc-auth/"
     },
@@ -24,7 +24,6 @@
       "github_url": "https://github.com/go-gitea/gitea",
       "logo_url": "https://cdn.simpleicons.org/gitea",
       "license": "MIT",
-      "oidc_support": "Built-in OAuth2/OIDC authentication source",
       "description": "A lightweight self-hosted Git service that can authenticate users through OAuth2/OIDC providers, including generic providers.",
       "documentation_url": "https://docs.gitea.com/administration/authentication/"
     },
@@ -35,7 +34,6 @@
       "github_url": "https://github.com/gitlabhq/gitlabhq",
       "logo_url": "https://cdn.simpleicons.org/gitlab",
       "license": "MIT (Community Edition) / GitLab Enterprise Edition license",
-      "oidc_support": "Available in the Free self-managed tier",
       "description": "A self-hosted DevOps platform with OpenID Connect OmniAuth login available in the Free self-managed tier; advanced OIDC group-based administration requires higher tiers.",
       "documentation_url": "https://docs.gitlab.com/administration/auth/oidc/"
     },
@@ -45,7 +43,6 @@
       "project_url": "https://forgejo.org/",
       "logo_url": "https://cdn.simpleicons.org/forgejo",
       "license": "GPL 3",
-      "oidc_support": "Built-in OAuth2/OIDC authentication source",
       "description": "A community-driven self-hosted Git forge with external authentication support for OIDC-compatible providers.",
       "documentation_url": "https://forgejo.org/docs/latest/admin/setup/authentication/"
     },
@@ -56,7 +53,6 @@
       "github_url": "https://github.com/grafana/grafana",
       "logo_url": "https://cdn.simpleicons.org/grafana",
       "license": "AGPL-3.0-only",
-      "oidc_support": "Built-in Generic OAuth",
       "description": "The open-source Grafana distribution supports OIDC-compatible providers through Generic OAuth; some provisioning and enterprise capabilities are separate features.",
       "documentation_url": "https://grafana.com/docs/grafana/latest/setup-grafana/configure-access/configure-authentication/generic-oauth/"
     },
@@ -67,7 +63,6 @@
       "github_url": "https://github.com/go-vikunja/vikunja",
       "logo_url": "https://cdn.simpleicons.org/vikunja",
       "license": "AGPL-3.0",
-      "oidc_support": "Built-in",
       "description": "A self-hosted task and project management application with configurable OpenID Connect authentication, account linking, and group mapping.",
       "documentation_url": "https://vikunja.io/docs/openid/"
     },
@@ -79,7 +74,6 @@
       "github_url": "https://github.com/nextcloud/user_oidc",
       "logo_url": "https://cdn.simpleicons.org/nextcloud",
       "license": "AGPL-3.0",
-      "oidc_support": "Free user_oidc app",
       "description": "A self-hosted collaboration suite that can use the maintained user_oidc app as an OpenID Connect user backend.",
       "documentation_url": "https://github.com/nextcloud/user_oidc"
     },
@@ -89,7 +83,6 @@
       "project_url": "https://github.com/element-hq/synapse",
       "logo_url": "https://cdn.simpleicons.org/matrix",
       "license": "AGPL-3.0",
-      "oidc_support": "Built-in",
       "description": "The Matrix homeserver supports authenticating users against one or more OpenID Connect providers instead of, or alongside, local passwords.",
       "documentation_url": "https://element-hq.github.io/synapse/latest/openid.html"
     },
@@ -100,7 +93,6 @@
       "github_url": "https://github.com/argoproj/argo-cd",
       "logo_url": "https://raw.githubusercontent.com/argoproj/argo-cd/master/ui/src/assets/images/argologo.svg",
       "license": "Apache-2.0",
-      "oidc_support": "Built-in OIDC and Dex integration",
       "description": "A declarative Kubernetes continuous-delivery tool with free self-hosted SSO through a direct OIDC provider or its bundled Dex integration.",
       "documentation_url": "https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/"
     },
@@ -111,7 +103,6 @@
       "github_url": "https://github.com/goharbor/harbor",
       "logo_url": "https://cdn.simpleicons.org/harbor",
       "license": "Apache-2.0",
-      "oidc_support": "Built-in",
       "description": "An open-source OCI container registry with OIDC authentication, configurable claims, and optional OIDC group-based permissions.",
       "documentation_url": "https://goharbor.io/docs/latest/administration/configure-authentication/oidc-auth/"
     },
@@ -123,7 +114,6 @@
       "github_url": "https://github.com/apache/guacamole-client",
       "logo_url": "https://cdn.simpleicons.org/apacheguacamole",
       "license": "Apache-2.0",
-      "oidc_support": "Free OpenID extension",
       "description": "A clientless remote desktop gateway whose OpenID Connect authentication extension delegates web login to an OIDC provider.",
       "documentation_url": "https://guacamole.apache.org/doc/gug/openid-auth.html"
     },
@@ -134,7 +124,6 @@
       "github_url": "https://github.com/apache/superset",
       "logo_url": "https://cdn.simpleicons.org/apachesuperset",
       "license": "Apache-2.0",
-      "oidc_support": "Built-in OAuth configuration",
       "description": "An open-source data exploration and dashboarding platform that supports OAuth2/OIDC providers through Flask AppBuilder authentication configuration.",
       "documentation_url": "https://superset.apache.org/docs/configuration/configuring-superset/"
     },
@@ -146,7 +135,6 @@
       "github_url": "https://github.com/jupyterhub/jupyterhub",
       "logo_url": "https://cdn.simpleicons.org/jupyter",
       "license": "BSD-3-Clause",
-      "oidc_support": "Free OAuthenticator integration",
       "description": "A multi-user Jupyter server that can authenticate with generic OIDC providers using the open-source OAuthenticator package.",
       "documentation_url": "https://oauthenticator.readthedocs.io/en/latest/tutorials/provider-specific-setup/providers/oidc.html"
     },
@@ -157,7 +145,6 @@
       "github_url": "https://github.com/Windshiftapp/core",
       "logo_url": "https://raw.githubusercontent.com/Windshiftapp/core/main/frontend/public/windshift-3.svg",
       "license": "AGPL-3.0",
-      "oidc_support": "Built-in in the free edition",
       "description": "An open-source, self-hosted project management and Jira alternative with OIDC SSO, unlimited users, and unlimited workspaces in its free edition.",
       "documentation_url": "https://windshift.sh/self-hosting/03-configuration/02-authentication"
     },
@@ -167,7 +154,6 @@
       "project_url": "https://github.com/outline/outline",
       "logo_url": "https://cdn.simpleicons.org/outline",
       "license": "BSL-1.1",
-      "oidc_support": "Built-in OIDC plugin",
       "description": "A self-hosted collaborative knowledge base with an OIDC authentication plugin. OIDC is available without an SSO add-on, but the current BSL license has restrictions and is not an open-source license.",
       "documentation_url": "https://docs.getoutline.com/s/hosting/"
     },
@@ -177,7 +163,6 @@
       "project_url": "https://github.com/paperless-ngx/paperless-ngx",
       "logo_url": "https://cdn.simpleicons.org/paperlessngx",
       "license": "GPL 3",
-      "oidc_support": "Built-in social authentication",
       "description": "A self-hosted document management system that supports generic OpenID Connect providers through its django-allauth integration.",
       "documentation_url": "https://docs.paperless-ngx.com/configuration/"
     },
@@ -188,7 +173,6 @@
       "github_url": "https://github.com/immich-app/immich",
       "logo_url": "https://raw.githubusercontent.com/immich-app/immich/main/docs/static/img/immich-logo.svg",
       "license": "AGPL-3.0-only",
-      "oidc_support": "Built-in",
       "description": "A self-hosted photo and video backup application with built-in OIDC authentication for external identity providers.",
       "documentation_url": "https://docs.immich.app/administration/oauth/"
     },
@@ -199,7 +183,6 @@
       "github_url": "https://github.com/opensearch-project/OpenSearch-Dashboards",
       "logo_url": "https://cdn.simpleicons.org/opensearch",
       "license": "Apache-2.0",
-      "oidc_support": "Built-in through the Security plugin",
       "description": "An open-source search and analytics interface that supports OpenID Connect authentication through the OpenSearch Security plugin.",
       "documentation_url": "https://docs.opensearch.org/latest/security/authentication-backends/openid-connect/"
     },
@@ -210,7 +193,6 @@
       "github_url": "https://github.com/zulip/zulip",
       "logo_url": "https://cdn.simpleicons.org/zulip",
       "license": "Apache-2.0",
-      "oidc_support": "Built-in",
       "description": "An open-source team chat platform with self-hosted support for generic OpenID Connect authentication and optional group synchronization.",
       "documentation_url": "https://zulip.readthedocs.io/en/latest/production/authentication-methods.html#openid-connect"
     },
@@ -221,7 +203,6 @@
       "github_url": "https://github.com/discourse/discourse",
       "logo_url": "https://cdn.simpleicons.org/discourse",
       "license": "GPL 2",
-      "oidc_support": "Built-in OIDC plugin",
       "description": "A self-hosted discussion platform with OpenID Connect authentication; the official OIDC plugin is now bundled into Discourse core.",
       "documentation_url": "https://meta.discourse.org/t/discourse-openid-connect-oidc/103632"
     },
@@ -231,7 +212,6 @@
       "project_url": "https://github.com/zammad/zammad",
       "logo_url": "https://raw.githubusercontent.com/zammad/zammad/develop/app/frontend/apps/desktop/initializer/assets/logo.svg",
       "license": "AGPL-3.0-only",
-      "oidc_support": "Built-in",
       "description": "An open-source, self-hosted helpdesk platform with built-in OpenID Connect authentication; its free AGPL edition does not require an SSO add-on.",
       "documentation_url": "https://zammad.com/en/product/features"
     },
@@ -241,7 +221,6 @@
       "project_url": "https://github.com/firezone/firezone",
       "logo_url": "https://raw.githubusercontent.com/firezone/firezone/main/elixir/priv/static/images/logo.svg",
       "license": "Apache-2.0",
-      "oidc_support": "Built-in",
       "description": "An open-source, self-hosted remote access gateway built on WireGuard that supports login through OIDC-compatible identity providers.",
       "documentation_url": "https://www.firezone.dev/kb"
     },
@@ -252,7 +231,6 @@
       "github_url": "https://github.com/pomerium/pomerium",
       "logo_url": "https://cdn.simpleicons.org/pomerium",
       "license": "Apache-2.0",
-      "oidc_support": "Built-in",
       "description": "An identity-aware reverse proxy that provides OIDC authentication and access policies in front of self-hosted applications.",
       "documentation_url": "https://www.pomerium.com/docs/integrations/user-identity/oidc"
     },
@@ -262,7 +240,6 @@
       "project_url": "https://github.com/l4rm4nd/VoucherVault",
       "logo_url": "https://raw.githubusercontent.com/l4rm4nd/VoucherVault/main/myapp/static/assets/img/logo.svg",
       "license": "GPL 3",
-      "oidc_support": "Built-in",
       "description": "A self-hosted manager for vouchers, coupons, loyalty cards, and gift cards with configurable OIDC single sign-on.",
       "documentation_url": "https://github.com/l4rm4nd/VoucherVault/wiki/02-%E2%80%90-Authentication#oidc-authentication"
     },
@@ -273,7 +250,6 @@
       "github_url": "https://github.com/proxmox/pve-manager",
       "logo_url": "https://cdn.simpleicons.org/proxmox",
       "license": "AGPL-3.0-only",
-      "oidc_support": "Built-in",
       "description": "An open-source virtualization platform for KVM virtual machines and LXC containers with a built-in OpenID Connect authentication realm.",
       "documentation_url": "https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pveum_authentication_realm_openid"
     },
@@ -285,7 +261,6 @@
       "logo_url": "https://cdn.simpleicons.org/jenkins",
       "license": "MIT",
       "oidc_status": "extension",
-      "oidc_support": "Free OpenID Connect Authentication plugin",
       "description": "A self-hosted automation server that can authenticate users with OIDC using the free OpenID Connect Authentication plugin.",
       "documentation_url": "https://plugins.jenkins.io/oic-auth/"
     },
@@ -297,7 +272,6 @@
       "logo_url": "https://www.mediawiki.org/static/images/icons/mediawikiwiki.svg",
       "license": "GPL 2",
       "oidc_status": "extension",
-      "oidc_support": "Free OpenID Connect extension",
       "description": "The wiki engine behind Wikipedia, with free OIDC login available through its OpenID Connect extension and PluggableAuth.",
       "documentation_url": "https://www.mediawiki.org/wiki/Extension:OpenID_Connect"
     },
@@ -309,7 +283,6 @@
       "logo_url": "https://cdn.simpleicons.org/wordpress",
       "license": "GPL 2",
       "oidc_status": "extension",
-      "oidc_support": "Free OpenID Connect Generic Client plugin",
       "description": "A widely used self-hosted CMS that supports OIDC login through the free OpenID Connect Generic Client plugin.",
       "documentation_url": "https://wordpress.org/plugins/daggerhart-openid-connect-generic/"
     },
@@ -321,7 +294,6 @@
       "logo_url": "https://raw.githubusercontent.com/apache/airflow/main/airflow-core/docs/img/logos/wordmark_1.svg",
       "license": "Apache-2.0",
       "oidc_status": "extension",
-      "oidc_support": "Free OAuth/OpenID support through the FAB auth provider",
       "description": "A platform for authoring, scheduling, and monitoring workflows that supports OAuth and OpenID authentication through its Flask-AppBuilder auth provider.",
       "documentation_url": "https://airflow.apache.org/docs/apache-airflow-providers-fab/stable/auth-manager/webserver-authentication.html"
     },
@@ -333,7 +305,6 @@
       "logo_url": "https://cdn.simpleicons.org/moodle",
       "license": "GPL 3",
       "oidc_status": "extension",
-      "oidc_support": "Free OpenID Connect Authentication plugin",
       "description": "A widely used open-source learning management system with configurable OIDC single sign-on through a free authentication plugin.",
       "documentation_url": "https://marketplace.moodle.com/plugins/auth_oidc"
     },
@@ -344,7 +315,6 @@
       "github_url": "https://github.com/argoproj/argo-workflows",
       "logo_url": "https://raw.githubusercontent.com/argoproj/argo-workflows/main/ui/src/assets/images/argologo.svg",
       "license": "Apache-2.0",
-      "oidc_support": "Built-in SSO",
       "description": "A Kubernetes-native workflow engine with built-in OAuth2/OIDC SSO support for the Argo Server UI and API.",
       "documentation_url": "https://argo-workflows.readthedocs.io/en/latest/argo-server-sso/"
     },
@@ -355,7 +325,6 @@
       "github_url": "https://github.com/Leantime/leantime",
       "logo_url": "https://cdn.jsdelivr.net/gh/Leantime/leantime@master/public/assets/images/logo_blue.svg",
       "license": "AGPL-3.0",
-      "oidc_support": "Built-in in the free edition",
       "description": "An open-source, self-hosted project management platform with task boards, project planning, wikis, and OIDC integration included in the OSS version.",
       "documentation_url": "https://github.com/Leantime/leantime/wiki/Configuration"
     },
@@ -366,7 +335,6 @@
       "github_url": "https://github.com/requarks/wiki",
       "logo_url": "https://raw.githubusercontent.com/requarks/wiki/main/client/static/svg/logo-wikijs.svg",
       "license": "AGPL-3.0",
-      "oidc_support": "Built-in generic OIDC strategy",
       "description": "A self-hosted wiki and knowledge base with a built-in generic OpenID Connect authentication strategy.",
       "documentation_url": "https://docs.requarks.io/auth"
     },
@@ -377,7 +345,6 @@
       "github_url": "https://github.com/hedgedoc/hedgedoc",
       "logo_url": "https://cdn.jsdelivr.net/gh/hedgedoc/hedgedoc@develop/frontend/src/components/common/hedge-doc-logo/logo_color.svg",
       "license": "AGPL-3.0",
-      "oidc_support": "Built-in",
       "description": "A self-hosted collaborative Markdown editor and knowledge-sharing platform that supports one or more generic OIDC providers.",
       "documentation_url": "https://github.com/hedgedoc/hedgedoc/blob/develop/docs/content/references/config/auth/oidc.md"
     },
@@ -389,7 +356,6 @@
       "logo_url": "https://raw.githubusercontent.com/xwiki/xwiki-platform/master/xwiki-platform-core/xwiki-platform-flamingo/xwiki-platform-flamingo-skin/xwiki-platform-flamingo-skin-resources/src/main/resources/flamingo/logo.svg",
       "license": "LGPL-2.1",
       "oidc_status": "extension",
-      "oidc_support": "Free OpenID Connect extension",
       "description": "An open-source wiki and knowledge-management platform with OIDC authentication available through a free extension.",
       "documentation_url": "https://github.com/xwiki-contrib/oidc#readme"
     },
@@ -401,7 +367,6 @@
       "logo_url": "https://raw.githubusercontent.com/redmine/redmine/master/app/assets/images/favicon.ico",
       "license": "GPL 2",
       "oidc_status": "extension",
-      "oidc_support": "Free OpenID Connect plugin",
       "description": "An open-source project management and issue-tracking application with OIDC login available through a free community plugin.",
       "documentation_url": "https://github.com/nanego/redmine_omniauth_oidc#readme"
     },
@@ -413,7 +378,6 @@
       "logo_url": "https://raw.githubusercontent.com/wekan/wekan/master/public/favicon.ico",
       "license": "MIT",
       "oidc_status": "extension",
-      "oidc_support": "Built-in OAuth2/OIDC login",
       "description": "An open-source, self-hosted kanban board for organizing projects and tasks, with OAuth2/OIDC login and automatic registration support.",
       "documentation_url": "https://github.com/wekan/wekan/blob/master/docs/Features/Login/OAuth2.md"
     },
@@ -424,7 +388,6 @@
       "github_url": "https://github.com/danny-avila/LibreChat",
       "logo_url": "https://raw.githubusercontent.com/danny-avila/LibreChat/main/client/public/assets/logo.svg",
       "license": "MIT",
-      "oidc_support": "Built-in OAuth2/OIDC authentication",
       "description": "A popular self-hosted AI chat platform with configurable OAuth2 and OpenID Connect authentication for external identity providers.",
       "documentation_url": "https://www.librechat.ai/docs/configuration/authentication/OAuth2-OIDC"
     },
@@ -435,7 +398,6 @@
       "github_url": "https://github.com/mealie-recipes/mealie",
       "logo_url": "https://cdn.simpleicons.org/mealie",
       "license": "AGPL-3.0",
-      "oidc_support": "Built-in",
       "description": "A popular self-hosted recipe manager and meal planner with native OpenID Connect authentication, account linking, and optional group-based access.",
       "documentation_url": "https://docs.mealie.io/documentation/getting-started/authentication/oidc-v2/"
     },
@@ -446,7 +408,6 @@
       "github_url": "https://github.com/sissbruecker/linkding",
       "logo_url": "https://raw.githubusercontent.com/sissbruecker/linkding/master/bookmarks/static/logo.svg",
       "license": "MIT",
-      "oidc_support": "Built-in OIDC",
       "description": "A fast, minimal self-hosted bookmark manager with native OIDC single sign-on and support for authentication proxies.",
       "documentation_url": "https://github.com/sissbruecker/linkding#readme"
     },
@@ -457,7 +418,6 @@
       "github_url": "https://github.com/rancher/rancher",
       "logo_url": "https://cdn.simpleicons.org/rancher",
       "license": "Apache-2.0",
-      "oidc_support": "Built-in generic OIDC",
       "description": "An open-source Kubernetes management platform with free self-hosted authentication through generic OIDC providers, including user and group mapping.",
       "documentation_url": "https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/authentication-permissions-and-global-configuration/authentication-config/configure-generic-oidc"
     },
@@ -469,7 +429,6 @@
       "logo_url": "https://cdn.simpleicons.org/matomo",
       "license": "GPL 3",
       "oidc_status": "extension",
-      "oidc_support": "Free LoginOIDC plugin",
       "description": "A widely used open-source web analytics platform with free OIDC login for self-hosted Matomo On-Premise through the LoginOIDC plugin.",
       "documentation_url": "https://plugins.matomo.org/LoginOIDC"
     },
@@ -481,7 +440,6 @@
       "logo_url": "https://cdn.simpleicons.org/drupal",
       "license": "GPL 2",
       "oidc_status": "extension",
-      "oidc_support": "Free OpenID Connect module",
       "description": "A widely used open-source CMS with OIDC login available through the community-maintained OpenID Connect module.",
       "documentation_url": "https://www.drupal.org/project/openid_connect"
     },
@@ -492,7 +450,6 @@
       "github_url": "https://github.com/henrygd/beszel",
       "logo_url": "https://raw.githubusercontent.com/henrygd/beszel/main/internal/site/public/static/icon.svg",
       "license": "MIT",
-      "oidc_support": "Built-in OAuth2/OIDC authentication",
       "description": "A lightweight self-hosted server monitoring platform with historical data, Docker statistics, alerts, and custom OAuth2/OIDC providers.",
       "documentation_url": "https://www.beszel.dev/guide/oauth"
     },
@@ -503,7 +460,6 @@
       "github_url": "https://github.com/dani-garcia/vaultwarden",
       "logo_url": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/resources/vaultwarden-logo.svg",
       "license": "AGPL-3.0-only",
-      "oidc_support": "Built-in OpenID Connect SSO",
       "description": "An unofficial Bitwarden-compatible server with self-hosted OpenID Connect SSO, account provisioning, and optional SSO-only login.",
       "documentation_url": "https://github.com/dani-garcia/vaultwarden/wiki/Enabling-SSO"
     },
@@ -514,7 +470,6 @@
       "github_url": "https://github.com/coder/coder",
       "logo_url": "https://cdn.simpleicons.org/coder",
       "license": "AGPL-3.0",
-      "oidc_support": "Built-in OpenID Connect authentication",
       "description": "An open-source self-hosted platform for provisioning cloud development environments with OIDC authentication, claims mapping, and optional refresh tokens.",
       "documentation_url": "https://coder.com/docs/admin/users/oidc-auth"
     },
@@ -525,7 +480,6 @@
       "github_url": "https://github.com/netbirdio/netbird",
       "logo_url": "https://raw.githubusercontent.com/netbirdio/netbird/main/proxy/web/src/assets/netbird-full.svg",
       "license": "BSD-3-Clause / AGPL-3.0",
-      "oidc_support": "Built-in generic OIDC",
       "description": "An open-source WireGuard-based mesh VPN with a self-hosted management service and generic OIDC login for the management dashboard and clients.",
       "documentation_url": "https://docs.netbird.io/selfhosted/identity-providers/generic-oidc"
     },
@@ -534,9 +488,8 @@
       "category": "Notes & knowledge management",
       "project_url": "https://usememos.com/",
       "github_url": "https://github.com/usememos/memos",
-      "logo_url": "https://usememos.com/logo-96.png",
+      "logo_url": "https://cdn.jsdelivr.net/gh/usememos/memos@main/web/public/logo.webp",
       "license": "MIT",
-      "oidc_support": "Built-in configurable OAuth2/OIDC SSO",
       "description": "A popular self-hosted notes and knowledge-base application with configurable OAuth2/OIDC providers, linked identities, and SSO-only login options.",
       "documentation_url": "https://usememos.com/docs/configuration/authentication"
     },
@@ -547,7 +500,6 @@
       "github_url": "https://github.com/mastodon/mastodon",
       "logo_url": "https://cdn.simpleicons.org/mastodon",
       "license": "AGPL-3.0-only",
-      "oidc_support": "Built-in OmniAuth OpenID Connect",
       "description": "Decentralized social network server with OmniAuth support for OpenID Connect identity providers, allowing users to sign in with an external SSO account.",
       "documentation_url": "https://docs.joinmastodon.org/spec/oauth/"
     },
@@ -558,7 +510,6 @@
       "github_url": "https://github.com/WeblateOrg/weblate",
       "logo_url": "https://cdn.simpleicons.org/weblate",
       "license": "GPL-3.0-or-later",
-      "oidc_support": "Built-in OpenID Connect (python-social-auth)",
       "description": "A web-based translation management system with built-in OpenID Connect authentication for signing in through a generic OIDC provider.",
       "documentation_url": "https://docs.weblate.org/en/latest/admin/auth.html"
     },
@@ -568,7 +519,6 @@
       "project_url": "https://miniflux.app/",
       "github_url": "https://github.com/miniflux/v2",
       "license": "Apache-2.0",
-      "oidc_support": "Built-in OIDC (OAuth2 provider option)",
       "description": "A minimalist and opinionated RSS reader with native OpenID Connect support through its OAuth2 authentication configuration.",
       "documentation_url": "https://miniflux.app/docs/configuration.html"
     },
@@ -579,7 +529,6 @@
       "github_url": "https://github.com/minio/minio",
       "logo_url": "https://cdn.simpleicons.org/minio",
       "license": "AGPL-3.0-only",
-      "oidc_support": "Built-in OpenID Connect identity provider support",
       "description": "An S3-compatible object storage server that accepts OpenID Connect identity providers for federated user authentication.",
       "documentation_url": "https://min.io/docs/minio/linux/administration/identity-access-management.html"
     },
@@ -590,7 +539,6 @@
       "github_url": "https://github.com/penpot/penpot",
       "logo_url": "https://cdn.simpleicons.org/penpot",
       "license": "MPL-2.0",
-      "oidc_support": "Built-in OpenID Connect",
       "description": "An open-source design and prototyping platform whose self-hosted backend supports OpenID Connect for user authentication.",
       "documentation_url": "https://help.penpot.app/technical-guide/configuration/#authentication-providers"
     },
@@ -601,7 +549,6 @@
       "github_url": "https://github.com/portainer/portainer",
       "logo_url": "https://cdn.simpleicons.org/portainer",
       "license": "zlib",
-      "oidc_support": "Built-in OAuth2/OIDC (custom provider)",
       "description": "A container management UI for Docker and Kubernetes with built-in OAuth2 authentication that works with any OIDC provider via the custom provider settings.",
       "documentation_url": "https://docs.portainer.io/admin/settings/authentication/oauth"
     },
@@ -611,9 +558,82 @@
       "project_url": "https://rallly.co/",
       "github_url": "https://github.com/lukevella/rallly",
       "license": "AGPL-3.0-only",
-      "oidc_support": "Built-in OpenID Connect",
       "description": "A self-hosted scheduling and collaboration tool for group meetings with single sign-on through any OpenID Connect provider.",
       "documentation_url": "https://support.rallly.co/self-hosting/single-sign-on"
+    },
+    {
+      "name": "NetBox",
+      "category": "Virtualization & infrastructure",
+      "project_url": "https://netbox.readthedocs.io/",
+      "github_url": "https://github.com/netbox-community/netbox",
+      "license": "Apache-2.0",
+      "description": "An open-source DCIM and IPAM platform for documenting networks and datacenters, with OIDC single sign-on through its built-in python-social-auth integration.",
+      "documentation_url": "https://netbox.readthedocs.io/en/stable/configuration/remote-authentication/"
+    },
+    {
+      "name": "Open WebUI",
+      "category": "AI assistants",
+      "project_url": "https://openwebui.com/",
+      "github_url": "https://github.com/open-webui/open-webui",
+      "license": "Open WebUI License (BSD-3-Clause based)",
+      "description": "A self-hosted AI chat interface with native OpenID Connect authentication, role and group synchronization, and support for any OIDC provider.",
+      "documentation_url": "https://docs.openwebui.com/features/authentication-access/auth/sso/"
+    },
+    {
+      "name": "PocketBase",
+      "category": "Developer platforms",
+      "project_url": "https://pocketbase.io/",
+      "github_url": "https://github.com/pocketbase/pocketbase",
+      "logo_url": "https://cdn.simpleicons.org/pocketbase",
+      "license": "MIT",
+      "description": "An open-source backend in a single binary with built-in OpenID Connect authentication, including multiple OIDC providers and optional id_token signature validation.",
+      "documentation_url": "https://pocketbase.io/docs/authentication"
+    },
+    {
+      "name": "OneDev",
+      "category": "Git hosting & DevOps",
+      "project_url": "https://onedev.io/",
+      "github_url": "https://github.com/theonedev/onedev",
+      "license": "MIT",
+      "description": "A self-hosted Git server with code review and CI that includes OpenID Connect single sign-on in its free Community Edition, with group-based authorization via claims.",
+      "documentation_url": "https://docs.onedev.io/tutorials/security/sso-with-okta"
+    },
+    {
+      "name": "GoToSocial",
+      "category": "Messaging & federation",
+      "project_url": "https://gotosocial.org",
+      "license": "AGPL-3.0",
+      "description": "A lightweight self-hosted ActivityPub server with built-in OpenID Connect login, group-based admin rights, and support for providers such as Dex, Keycloak, and GitLab.",
+      "documentation_url": "https://docs.gotosocial.org/en/latest/configuration/oidc/"
+    },
+    {
+      "name": "Linkwarden",
+      "category": "Bookmarks & read-it-later",
+      "project_url": "https://linkwarden.app",
+      "github_url": "https://github.com/linkwarden/linkwarden",
+      "license": "AGPL-3.0",
+      "description": "A self-hosted bookmark manager with collaborative collections that includes generic OpenID Connect single sign-on for self-hosted installations.",
+      "documentation_url": "https://docs.linkwarden.app/self-hosting/sso-oauth"
+    },
+    {
+      "name": "Directus",
+      "category": "CMS & publishing",
+      "project_url": "https://directus.com",
+      "github_url": "https://github.com/directus/directus",
+      "logo_url": "https://cdn.simpleicons.org/directus",
+      "license": "MSCL-1.0 (source-available)",
+      "description": "A self-hosted data platform and headless CMS with OpenID Connect SSO and role mapping from OIDC groups, included without a paid SSO add-on.",
+      "documentation_url": "https://directus.com/docs/configuration/auth-sso"
+    },
+    {
+      "name": "ERPNext",
+      "category": "Business & ERP",
+      "project_url": "https://erpnext.com",
+      "github_url": "https://github.com/frappe/erpnext",
+      "logo_url": "https://cdn.simpleicons.org/erpnext",
+      "license": "GPL-3.0 (ERPNext) / MIT (Frappe framework)",
+      "description": "An open-source self-hosted ERP suite whose underlying Frappe framework provides free OpenID Connect login through Social Login Keys, including Keycloak and custom OIDC providers.",
+      "documentation_url": "https://docs.frappe.io/framework/user/en/guides/integration/openid_connect_and_frappe_social_login"
     }
   ]
 }
