@@ -576,6 +576,7 @@
       "project_url": "https://openwebui.com/",
       "github_url": "https://github.com/open-webui/open-webui",
       "license": "Open WebUI License (BSD-3-Clause based)",
+      "logo_url": "https://openwebui.com/logo.png",
       "description": "A self-hosted AI chat interface with native OpenID Connect authentication, role and group synchronization, and support for any OIDC provider.",
       "documentation_url": "https://docs.openwebui.com/features/authentication-access/auth/sso/"
     },
@@ -611,6 +612,7 @@
       "category": "Bookmarks & read-it-later",
       "project_url": "https://linkwarden.app",
       "github_url": "https://github.com/linkwarden/linkwarden",
+      "logo_url": "https://github.com/linkwarden/linkwarden/raw/main/assets/logo.png",
       "license": "AGPL-3.0",
       "description": "A self-hosted bookmark manager with collaborative collections that includes generic OpenID Connect single sign-on for self-hosted installations.",
       "documentation_url": "https://docs.linkwarden.app/self-hosting/sso-oauth"

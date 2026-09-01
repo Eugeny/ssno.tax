@@ -71,11 +71,19 @@ const safeUrl = (value) => {
 const externalLink = (url, label) =>
   `<a href="${safeUrl(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
 
-const renderLicense = (license) => {
-  const isBsl = /^BSL\b/i.test(license);
-  if (!isBsl) return escapeHtml(license);
+// Restrictive "source-available" licenses that are not OSI-approved open
+// source. Entries must anchor at the start of the license string (e.g.
+// "BSL-1.1", "MSCL-1.0 (source-available)").
+const restrictiveLicenses = [
+  { pattern: /^BSL\b/i, title: "Business Source License" },
+  { pattern: /^MSCL\b/i, title: "Source-available community license (not OSI-approved)" },
+];
 
-  return `<span class="license-alert" title="Business Source License"><span class="license-alert-icon" aria-hidden="true">⚠</span><span><span class="visually-hidden">Warning: </span>${escapeHtml(license)}</span></span>`;
+const renderLicense = (license) => {
+  const restrictive = restrictiveLicenses.find(({ pattern }) => pattern.test(license));
+  if (!restrictive) return escapeHtml(license);
+
+  return `<span class="license-alert" title="${escapeHtml(restrictive.title)}"><span class="license-alert-icon" aria-hidden="true">⚠</span><span><span class="visually-hidden">Warning: </span>${escapeHtml(license)}</span></span>`;
 };
 
 const renderOidcStatus = (status = "built_in") => {
