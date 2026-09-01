@@ -4,7 +4,7 @@
     "These projects can be self-hosted and provide basic OIDC/OAuth2 login without buying an SSO add-on.",
     "You still need an OIDC identity provider, such as Keycloak, authentik, or Zitadel.",
     "Hosting, support, advanced provisioning, and group-sync features may have separate commercial offerings. Verify the feature against the version you deploy.",
-    "Outline, Directus, HashiCorp Vault & Boundary are included because their free self-hosted edition includes OIDC, but their current BSL and MSCL licenses are not OSI-approved open source.",
+    "Outline, Directus, HashiCorp Vault & Boundary are included because their free self-hosted edition includes OIDC, but their current BSL and MSCL licenses are not OSI-approved open source"
   ],
   "applications": [
     {
