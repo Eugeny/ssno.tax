@@ -524,6 +524,16 @@
       "documentation_url": "https://miniflux.app/docs/configuration.html"
     },
     {
+      "name": "FreshRSS",
+      "category": "RSS & news readers",
+      "project_url": "https://freshrss.org/",
+      "github_url": "https://github.com/FreshRSS/FreshRSS",
+      "logo_url": "https://cdn.simpleicons.org/freshrss",
+      "license": "AGPL-3.0-only",
+      "description": "A self-hosted RSS feed aggregator with native OpenID Connect support, allowing login to be delegated to any compatible identity provider.",
+      "documentation_url": "https://freshrss.github.io/FreshRSS/en/admins/16_OpenID-Connect.html"
+    },
+    {
       "name": "MinIO",
       "category": "Object storage",
       "project_url": "https://min.io/",
@@ -568,8 +578,8 @@
       "project_url": "https://netbox.readthedocs.io/",
       "github_url": "https://github.com/netbox-community/netbox",
       "license": "Apache-2.0",
-      "description": "An open-source DCIM and IPAM platform for documenting networks and datacenters, with OIDC single sign-on through its built-in python-social-auth integration.",
-      "documentation_url": "https://netbox.readthedocs.io/en/stable/configuration/remote-authentication/"
+      "description": "An open-source DCIM and IPAM platform for documenting networks and datacenters, with single sign-on through any python-social-auth backend including generic OpenID Connect.",
+      "documentation_url": "https://netbox.readthedocs.io/en/stable/administration/authentication/overview/"
     },
     {
       "name": "Open WebUI",
