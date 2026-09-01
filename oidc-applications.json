@@ -933,6 +933,46 @@
       "documentation_url": "https://docs.budibase.com/docs/openid-connect"
     },
     {
+      "name": "Termix",
+      "category": "Remote desktop gateway",
+      "project_url": "https://termix.site/",
+      "github_url": "https://github.com/LukeGus/Termix",
+      "logo_url": "https://raw.githubusercontent.com/LukeGus/Termix/main/public/icon.svg",
+      "license": "Apache-2.0",
+      "description": "A self-hosted, browser-based SSH terminal and remote desktop (RDP/VNC) management platform with built-in OIDC, LDAP, GitHub, and Google sign-in, OIDC group-to-role mapping, and 2FA.",
+      "documentation_url": "https://termix.site/features/authentication/oidc"
+    },
+    {
+      "name": "Tandoor Recipes",
+      "category": "Recipe management",
+      "project_url": "https://tandoor.dev/",
+      "github_url": "https://github.com/TandoorRecipes/recipes",
+      "logo_url": "https://raw.githubusercontent.com/TandoorRecipes/recipes/develop/docs/logo_color.svg",
+      "license": "AGPL-3.0 with Commons Clause",
+      "description": "A self-hosted recipe manager and meal planner that supports a generic OpenID Connect provider and many other OAuth logins via django-allauth social authentication.",
+      "documentation_url": "https://docs.tandoor.dev/features/authentication/"
+    },
+    {
+      "name": "Pangolin",
+      "category": "Remote access & VPN",
+      "project_url": "https://pangolin.net/",
+      "github_url": "https://github.com/fosrl/pangolin",
+      "logo_url": "https://raw.githubusercontent.com/fosrl/pangolin/main/public/logo/pangolin_orange.svg",
+      "license": "AGPL-3.0 / Fossorial Commercial License (open core)",
+      "description": "A self-hosted, identity-aware tunneled reverse proxy and WireGuard-based remote access platform that authenticates users through external OpenID Connect identity providers such as Authentik, Keycloak, or Entra ID.",
+      "documentation_url": "https://docs.pangolin.net/manage/identity-providers/openid-connect"
+    },
+    {
+      "name": "Pulse",
+      "category": "Observability & dashboards",
+      "project_url": "https://pulserelay.pro/",
+      "github_url": "https://github.com/rcourtman/Pulse",
+      "logo_url": "https://raw.githubusercontent.com/rcourtman/Pulse/main/frontend-modern/public/logo.svg",
+      "license": "MIT",
+      "description": "A self-hosted monitoring platform for Proxmox, Docker, Kubernetes, and TrueNAS with OIDC single sign-on, group and domain restrictions, and claim mapping.",
+      "documentation_url": "https://github.com/rcourtman/Pulse/blob/main/docs/OIDC.md"
+    },
+    {
       "name": "Warpgate",
       "category": "Remote access & VPN",
       "project_url": "https://warpgate.null.page/",
